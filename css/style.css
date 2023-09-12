@@ -1,0 +1,26 @@
+:root {
+  --primary: #8f35a5;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fdf8ee;
+  width: 1920px;
+  height: 1215px;
+}
+
+.parent-container {
+  width: 1920px;
+  height: 1215px;
+  background: FDF8EE;
+}
