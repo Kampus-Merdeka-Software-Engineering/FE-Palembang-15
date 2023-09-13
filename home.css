@@ -1,3 +1,6 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
 
 body {
     width: 100%;
@@ -31,6 +34,7 @@ body {
     border-style: solid;
     border-color: #4D2C5E;
 }
+
 
 .navbar-content > button :hover {
     background-color: #4D2C5E;
@@ -66,7 +70,6 @@ body {
 }
 
 .banner1 {
-    /* padding : 20px 120px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,19 +81,123 @@ body {
     margin: 0 auto;
 }
 
-.visimisi-container > h2 {
+h2 {
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 0;
+     box-sizing: border-box;
     color: #4D2C5E;
     font-family: Roboto;
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
-    line-height: 135%; /* 64.8px */
+    line-height: 135%; 
+    text-align: center;
+
 }
 
-.visimisi {
+
+.visimisi-content1 {
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
+    justify-content: center;
+    background-color: #4D2C5E;
+    border-radius: 15px;
+    color: white;
+    width: 60%;
+    height: 30%;
+    box-sizing: border-box;
+    flex-flow: row;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    margin: 0 20%;
+    padding: 0 5%;
+}
+
+.visimisi-content1 > h4 {
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.visimisi-content1 > h4 > p {
+    color: #8A8A8A;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.visimisi-content1 > .visi , .misi, .profil {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    margin-top: 5%;
+}
+
+.branding1  {
+    margin: 0 2%;
+}
+
+.branding1 > h2 {
+    text-align: left;
+}
+.branding1 > p {
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 5%;
+}
+
+.branding1 > button {
+    padding: 2% 15%;
+    font-size: 20px;
+    line-height: 2;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background-color: #4D2C5E;
+    color: white;
+    border-style: solid;
+    border-color: #4D2C5E;
+}
+
+.course-containerbox {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding: 32px 16px;
+
 }
 
 
+.course-container {
+    width: 100%;
+    text-align: inherit;
+    border-radius: inherit;
+    display: block;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+.coursebox1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
