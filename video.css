@@ -309,7 +309,7 @@ body {
 .footer-column {
     flex: 1;
     margin-left: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 .footer-column h3 {
@@ -333,4 +333,5 @@ body {
 .footer p {
     text-align: center;
     color: white;
+    font-size: 20px;
 }
