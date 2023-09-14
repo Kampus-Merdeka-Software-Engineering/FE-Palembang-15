@@ -7,13 +7,19 @@ body {
 
 .parent-container {
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-color : #FDF8EE;
     margin: 0;
 }
 
 .main-container {
     width: 90%;
+    margin: 0 auto ;
+    /* background-color: burlywood; */
+}
+
+.main-container2 {
+    width: 80%;
     margin: 0 auto ;
     /* background-color: burlywood; */
 }
@@ -90,7 +96,7 @@ body {
 }
 
 .course-content-container h1 {
-    font-size: 28px;
+    font-size: 25px;
     color: black;
 }
 
@@ -105,10 +111,132 @@ body {
 }
 
 .course-duration {
-    font-size: 18px;
+    font-size: 15px;
     color: #A0A5BD;
 }
 .course-title {
     font-size: 18px;
     color: #0D1333; 
+}
+
+.course-divider {
+    border: none;
+    border-top: 2px solid #E5E5E5; 
+}
+
+.introduction-course h2{
+    font-size: 45px;
+}
+
+.introduction-course p{
+    font-size: 20px;
+    color: #8A8A8A;
+    margin-top: -20px;
+}
+
+.title-comment{
+    font-size: 30px;
+}
+
+.comment-container {
+    background-color: white;
+    border: 2px solid #D2D2D2;
+    border-radius: 10px;
+    padding: 23px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    width: 27%;
+    margin-bottom: 20px;
+}
+
+.comment-container h3 {
+    font-size: 25px;
+}
+
+.comment-date{
+    font-size: 15px;
+    color: #817A99;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.comment-desc{
+    font-size: 15px;
+    color: #676767;
+}
+
+.comments-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-judul {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 25px;
+    color: black;
+}
+
+.form-container h3 {
+    font-size: 20px;
+    color: #160647;
+    margin-top: -20px;
+}
+
+.form-container p {
+    color: #99A8A8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    color: #76838F;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #A4BFC9;
+    border-radius: 20px;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-button {
+    background-color: #4D2C5E;
+    color: white;
+    border: none;
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
