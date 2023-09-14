@@ -38,10 +38,16 @@ body {
     border-color: #4D2C5E;
 }
 
+.navbar-content > button:hover {
+    background-color: #4D2C5E;
+    color: white;
+}
 
 .logo {
-    width: 330px;
-    height: 150px;
+    width: 230px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 70px;
 }
 
 .navbar-container {
@@ -49,6 +55,9 @@ body {
     padding: 10 px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
 .navbar-container > .navbar-content > a {
@@ -58,10 +67,15 @@ body {
     font-size: 30px;
 }
 
+.navbar-container > .navbar-content > .Home {
+    color: #4D2C5E;
+}
+
 .navbar-container > .navbar-content {
     margin: auto 0;
     width: 40%;
     word-spacing: 70px;
+    padding-left: 52%;
 }
 
 .banner1 {
@@ -152,7 +166,8 @@ h2 {
 
 .branding1 > button {
     padding: 2% 15%;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500px;
     line-height: 2;
     border-radius: 20px;
     cursor: pointer;
@@ -162,6 +177,11 @@ h2 {
     color: white;
     border-style: solid;
     border-color: #4D2C5E;
+}
+
+.branding1 > button:hover {
+    background-color: white;
+    color:  #4D2C5E;
 }
 
 .course-containerbox {
