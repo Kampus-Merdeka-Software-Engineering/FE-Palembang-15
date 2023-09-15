@@ -1,6 +1,6 @@
 body {
     background-color : white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .parent-container {
@@ -182,7 +182,7 @@ body {
     font-size: 25px;
 }
 
-.comment-date{
+.comment-jabatan{
     font-size: 15px;
     color: #817A99;
     font-weight: bold;
