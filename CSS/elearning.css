@@ -206,7 +206,8 @@ h2 {
     text-align: center;
 }
 
-.course-container {
+
+/* .course-container {
     display: flex;
     justify-content: center;
     background-color: #4D2C5E;
@@ -220,6 +221,40 @@ h2 {
     scroll-behavior: smooth;
     margin: 0 20%;
     padding: 0 5%;
+} */
+
+.listbox1 {
+    display: flex;
+    ;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.listbox2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listbox2 :hover {
+    background-color: rgb(240, 238, 238);
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.list-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: (100px, auto);
+    padding: 10px;
+}
+
+.list-content {
+    width: 450px;
+    height: auto;
+    border: 4px solid rgba(145, 158, 171, 0.24);
+    border-radius: 16px;
 }
 
 
