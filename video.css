@@ -168,7 +168,7 @@ body {
 
 .comment-container {
     background-color: white;
-    border: 2px solid #D2D2D2;
+    border: 1px solid #D2D2D2;
     border-radius: 10px;
     padding: 23px;
     margin-top: 20px;
@@ -304,9 +304,9 @@ body {
     height: auto;
 }
 
+/* margin top dihapus di footer-content gatau kenapa tiba2 error */
 .footer-content p {
     font-size: 18px;
-    margin-top: -30px;
     margin-bottom: 60px;
 }
 
@@ -365,16 +365,170 @@ body {
     font-size: 20px;
 }
 
+/* responsive untuk hapee */
 @media (max-width: 768px) {
+    /* responsive untuk navbar */
     .navbar-content {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 10px;
     }
 
-    .navbar-content a {
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-content .button-sign1,
+    .navbar-content .button-sign2 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+    }
+    /* end navbar */
+
+    .video-learning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .course-content-container {
+        width: 90%;
+        margin: 5vh auto;
+    }
+
+    .course-content-container h1 {
+        font-size: 17px;
+        margin-top: 0;
+    }
+    
+    .course-content-container h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .course-content-container p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .introduction-course h2{
+        font-size: 30px;
+    }
+
+    .introduction-course p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .title-comment {
+        font-size: 25px;
+    }
+
+    .comments-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment-container {
+        display: block;
+        background-color: white;
+        border: 1px solid #D2D2D2;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%;
+    }
+    
+    .form-container{
+        width: 70%;
+    }
+
+    /* responsive untuk footernya */
+    
+    .footer-container {
+        background-color: #4D2C5E;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-content {
+        width: 100%; 
+        display: block;
+    }
+
+    .footer-social-icons ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
         margin: 0;
-        font-size: 18px;
+    }
+
+    .footer p{
+        font-size: 12px;
+        width: 100%;
+        display: block;
+    }    
+    
+    .footer-links {
+        display: block;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 20px;
+    }
+    /* end footer */
+}
+
+
+/* responsive untuk tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .logo {
+        max-width: 150px;
+        height: auto;
+    }
+    .video-learning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .course-content-container {
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .comments-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .comment-container {
+        background-color: white;
+        border: 1px solid #D2D2D2;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 40%;
+        
     }
 
 }
