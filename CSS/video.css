@@ -1,6 +1,7 @@
 body {
     background-color : white;
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 .parent-container {
@@ -20,84 +21,6 @@ body {
     width: 80%;
     margin: 0 auto ;
 }
-
-.navbar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #FDF8EE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 100;
-}
-
-/* Mengatur gaya logo */
-.logo {
-    max-width: 200px;
-    height: auto;
-}
-
-/* Mengatur gaya menu navigasi */
-.navbar-content a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-/* Mengubah warna teks menu ketika digerakkan */
-.navbar-content a:hover {
-    color: #4D2C5E;
-}
-
-/* Mengatur gaya tombol Sign In dan Sign Up */
-.button-sign1, .button-sign2 {
-    background-color: #4D2C5E;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Mengubah warna latar belakang tombol ketika digerakkan */
-.button-sign1:hover, .button-sign2:hover {
-    background-color: #4D2C5E;
-}
-
-/* Mengatur gaya tombol Sign In */
-.button-sign1 {
-    background-color: transparent;
-    color: #333;
-    border: 2px solid #4D2C5E;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Mengubah warna latar belakang tombol ketika di-hover */
-.button-sign1:hover {
-    background-color: #4D2C5E;
-    color: #fff;
-    border-color: #4D2C5E;
-}
-
-/* Mengubah warna tombol ketika diklik */
-.button-sign1:active {
-    background-color: #4D2C5E;
-    color: #fff;
-    border-color: #4D2C5E;
-}
-
-/* end bagian header */
 
 .video-learning {
     display: flex;
@@ -270,105 +193,10 @@ body {
 }
 
 
-/* style untuk footer */
-
-.social-icons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s ease;
-}
-
-.social-icons li a:hover {
-    background-color: #4D2C5E;
-}
-
-.footer-container {
-    background-color: #4D2C5E;
-    color: white;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.footer-logo img {
-    width: 150px;
-    height: auto;
-}
-
-/* margin top dihapus di footer-content gatau kenapa tiba2 error */
-.footer-content p {
-    font-size: 18px;
-    margin-bottom: 60px;
-}
-
-.footer-social-icons ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 20px;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none; 
-}
-
-.footer-links a:hover {
-    color: #FDF8EE;
-}
-
-.footer-column {
-    flex: 1;
-    margin-left: 30px;
-    padding-bottom: 30px;
-}
-
-.footer-column h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.footer-column p {
-    font-size: 16px;
-}
-
-.footer {
-    height: 50px;
-    background-color: #341E40;
-    margin-top: -30px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-}
-
-.footer p {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
 /* responsive untuk hapee */
 @media (max-width: 768px) {
     /* responsive untuk navbar */
-    .navbar-content {
+    /* .navbar-content {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 10px;
@@ -388,7 +216,7 @@ body {
     .logo {
         max-width: 100px;
         height: auto;
-    }
+    } */
     /* end navbar */
 
     .video-learning {
@@ -455,7 +283,7 @@ body {
 
     /* responsive untuk footernya */
     
-    .footer-container {
+    /* .footer-container {
         background-color: #4D2C5E;
         color: white;
         display: flex;
@@ -488,7 +316,7 @@ body {
         justify-content: space-between;
         width: 50%;
         margin-top: 20px;
-    }
+    } */
     /* end footer */
 }
 
@@ -496,10 +324,10 @@ body {
 /* responsive untuk tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
     
-    .logo {
+    /* .logo {
         max-width: 150px;
         height: auto;
-    }
+    } */
     .video-learning {
         display: flex;
         flex-direction: column;

@@ -1,0 +1,112 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FDF8EE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+/* Mengatur gaya logo */
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Mengatur gaya menu navigasi */
+.navbar-content a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Mengubah warna teks menu ketika digerakkan */
+.navbar-content a:hover {
+    color: #4D2C5E;
+}
+
+/* Mengatur gaya tombol Sign In dan Sign Up */
+.button-sign1, .button-sign2 {
+    background-color: #4D2C5E;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Mengubah warna latar belakang tombol ketika digerakkan */
+.button-sign1:hover {
+    background-color: #4D2C5E;
+}
+
+.button-sign2:hover {
+    background-color: #FDF8EE;
+    color: #4D2C5E;
+}
+
+/* Mengatur gaya tombol Sign In */
+.button-sign1 {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #4D2C5E;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Mengubah warna latar belakang tombol ketika di-hover */
+.button-sign1:hover {
+    background-color: #4D2C5E;
+    color: #fff;
+    border-color: #4D2C5E;
+}
+
+/* Mengubah warna tombol ketika diklik */
+.button-sign1:active {
+    background-color: #4D2C5E;
+    color: #fff;
+    border-color: #4D2C5E;
+}
+
+@media (max-width: 768px) {
+    /* responsive untuk navbar */
+    .navbar-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-content .button-sign1,
+    .navbar-content .button-sign2 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        max-width: 150px;
+        height: auto;
+    }
+}

@@ -4,68 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video_E-Learning</title>
-    <link rel="stylesheet" type="text/css" href="video.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- heading start here -->
     <div class="parent-container">
-        <nav class="navbar-container">
-            <img class="logo" src="image/Logo Educareerskill.png">
-            <div class="navbar-content">
-                <a href="home.html">Home</a>
-                <a href="E-Learning.html">E-learning</a>
-                <a href="About2.html">About</a>
-                <button class="button-sign1">Sign In</button> 
-                <button class="button-sign2">Sign Up</button>
-            </div>
-        </nav>
+        <div id="header-container"></div>
+        <script>
+            $(function(){
+                $("#header-container").load("header.html");
+            });
+        </script>
 
-    <!-- heading end here -->
-
-    <div class="main-container">
-        <div class="video-learning">
-            <div class="video-container">
-                <video controls autoplay>
-                    <source src="video/code.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="course-content-container">
-                <h1>Course Content</h2>
-                <div class="course-item">
-                    <h2>01</h2>
-                    <div class="course-details">
-                        <p class="course-duration">5:35 mins</p>
-                        <p class="course-title">Welcome to the course</p>
-                    </div>
+        <div class="main-container">
+            <div class="video-learning">
+                <div class="video-container">
+                    <video controls autoplay>
+                        <source src="video/code.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <hr class="course-divider">
-                <div class="course-item">
-                    <h2>02</h2>
-                    <div class="course-details">
-                        <p class="course-duration">19:04 mins</p>
-                        <p class="course-title">Design Thinking-Intro</p>
+                <div class="course-content-container">
+                    <h1>Course Content</h2>
+                    <div class="course-item">
+                        <h2>01</h2>
+                        <div class="course-details">
+                            <p class="course-duration">5:35 mins</p>
+                            <p class="course-title">Welcome to the course</p>
+                        </div>
                     </div>
+                    <hr class="course-divider">
+                    <div class="course-item">
+                        <h2>02</h2>
+                        <div class="course-details">
+                            <p class="course-duration">19:04 mins</p>
+                            <p class="course-title">Design Thinking-Intro</p>
+                        </div>
+                    </div>
+                    <hr class="course-divider">
+                    <div class="course-item">
+                        <h2>03</h2>
+                        <div class="course-details">
+                            <p class="course-duration">12:48 mins</p>
+                            <p class="course-title">Design Thinking Process</p>
+                        </div>
+                    </div>
+                    <hr class="course-divider">
+                    <div class="course-item">
+                        <h2>04</h2>
+                        <div class="course-details">
+                            <p class="course-duration">37:53 mins</p>
+                            <p class="course-title">Customer Perspective</p>
+                        </div>
+                    </div>  
                 </div>
-                <hr class="course-divider">
-                <div class="course-item">
-                    <h2>03</h2>
-                    <div class="course-details">
-                        <p class="course-duration">12:48 mins</p>
-                        <p class="course-title">Design Thinking Process</p>
-                    </div>
-                </div>
-                <hr class="course-divider">
-                <div class="course-item">
-                    <h2>04</h2>
-                    <div class="course-details">
-                        <p class="course-duration">37:53 mins</p>
-                        <p class="course-title">Customer Perspective</p>
-                    </div>
-                </div>  
             </div>
         </div>
     </div>
-</div>
 
 <div class="main-container2">
     <div class="introduction-course">
@@ -121,47 +115,12 @@
     </div>
 </div>
     <!-- footer start here -->
-<div class="footer-container">
-    <div class="footer-column">
-        <div class="footer-logo">
-            <img src="image/logo_footer.png">
-        </div>
-        <div class="footer-content">
-            <p><b>Wujudkan mimpi bersama EduCareerSkill</b></p>
-        </div>
-        <div class="footer-social-icons">
-            <ul  class="social-icons">
-                <li><a href="#"><img src="image/Frame.png" alt=""></a></li>
-                <li><a href="#"><img src="image/Frame (2).png" alt=""></a></li>
-                <li><a href="#"><img src="image/Frame (1).png" alt=""></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-links">
-        <div class="footer-column">
-            <h3>EduCareerSkill</h3>
-                <p><a href="#">Tentang</a></p>
-                <p><a href="#">Karir</a></p>
-                <p><a href="#">Kerjasama</a></p>
-                <p><a href="#">Blog</a></p>
-        </div>
-        <div class="footer-column">
-            <h3>Produk</h3>
-                <p><a href="#">E-learning</a></p>
-                <p><a href="#">Bootcamp</a></p>
-                <p><a href="#">Mentor</a></p>
-        </div>
-        <div class="footer-column">
-            <h3>Lainnya</h3>
-                <p><a href="#">My Course</a></p>
-                <p><a href="#">Kategori Populer</a></p>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <p>© 2023. All Rights Reserved</p>
-</div>
+<div id="footer-container"></div>
+<script>
+    $(function(){
+        $("#footer-container").load("footer.html");
+    });
+</script>
 
-    <!-- footer end here -->   
 </body>
 </html>
