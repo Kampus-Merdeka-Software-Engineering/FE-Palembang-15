@@ -1,11 +1,18 @@
 /* Mengatur font untuk seluruh teks pada halaman */
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-container {
     position: fixed;
+    top: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -19,7 +26,7 @@ body {
 
 /* Mengatur gaya logo */
 .logo {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 
@@ -39,9 +46,9 @@ body {
 
 /* Mengatur gaya tombol Sign In dan Sign Up */
 .button-sign1, .button-sign2 {
-    background-color: #4D2C5E;
-    color: #fff;
-    border: none;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #4D2C5E;
     border-radius: 25px;
     padding: 10px 20px;
     margin-left: 15px;
@@ -52,33 +59,9 @@ body {
 /* Mengubah warna latar belakang tombol ketika digerakkan */
 .button-sign1:hover, .button-sign2:hover {
     background-color: #4D2C5E;
-}
-
-/* Mengatur gaya tombol Sign In */
-.button-sign1 {
-    background-color: transparent;
-    color: #333;
-    border: 2px solid #4D2C5E;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Mengubah warna latar belakang tombol ketika di-hover */
-.button-sign1:hover {
-    background-color: #4D2C5E;
     color: #fff;
-    border-color: #4D2C5E;
 }
-
-/* Mengubah warna tombol ketika diklik */
-.button-sign1:active {
-    background-color: #4D2C5E;
-    color: #fff;
-    border-color: #4D2C5E;
-}
+ 
 
 /* ------------------------ SECTION 1-------------------------------- */
 
@@ -177,7 +160,7 @@ body {
 
 /* Mengatur gaya teks di dalam .Section-2 */
 .Section-2 h2 {
-    color: #333;
+    color: #333333;
     font-size: 24px;
     margin-bottom: 30px;
     text-align: right;
@@ -293,67 +276,97 @@ body {
 
 /* ------------footer------------ */
 
-/* Mengatur gaya footer container */
-.footer-container {
-    background-color: #4D2C5E;
-    color: #fff;
-    padding: 20px 0;
+.social-icons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
 }
 
-/* Mengatur gaya footer content */
-.footer-content {
+.social-icons li a:hover {
+    background-color: #4D2C5E;
+}
+
+.footer-container {
+    background-color: #4D2C5E;
+    color: white;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-/* Mengatur gaya footer logo dan teks */
-.footer-logo-social img {
-    max-width: 150px;
-    margin-bottom: 10px;
+.footer-logo img {
+    width: 150px;
+    height: auto;
 }
 
-/* Mengatur gaya media sosial icons */
-.social-media-icons {
-    list-style-type: none;
+.footer-content p {
+    font-size: 18px;
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
+
+.footer-social-icons ul {
+    list-style: none;
     padding: 0;
     display: flex;
+    gap: 20px;
 }
 
-.social-media-icons li {
-    margin-right: 10px;
-}
 
-/* Mengatur gaya footer links */
 .footer-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
 }
 
-.footer-links div {
+.footer-links a {
+    color: white;
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    color: #FDF8EE;
+}
+
+.footer-column {
     flex: 1;
-    margin-right: 20px;
+    margin-left: 30px;
+    padding-bottom: 30px;
 }
 
-/* Mengatur gaya footer links header */
-.footer-links h3 {
-    font-size: 18px;
+.footer-column h3 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-/* Mengatur gaya footer links items */
-.footer-links p {
-    font-size: 14px;
-    margin: 5px 0;
+.footer-column p {
+    font-size: 16px;
 }
 
-/* Mengatur gaya footer copyright */
+.footer {
+    height: 50px;
+    background-color: #341E40;
+    margin-top: -30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
 .footer p {
     text-align: center;
-    margin-top: 20px;
+    color: white;
+    font-size: 20px;
 }
 
 /* Media query untuk mode mobile */

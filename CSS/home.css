@@ -1,0 +1,457 @@
+/* Mengatur font untuk seluruh teks pada halaman */
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* style untuk content */
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    padding: 150px 100px;
+    margin-bottom: 10px;
+    background-color: #FDF8EE;
+}
+
+.banner1>img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: #4D2C5E;
+    height: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4D2C5E;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 135%;
+    text-align: center;
+}
+
+.visimisi-content1 {
+    display: flex;
+    justify-content: center;
+    background-color: #4D2C5E;
+    border-radius: 50px;
+    color: white;
+    width: auto;
+    height: 200px;
+    margin: 0 180px;
+    padding: 15px 50px;
+}
+
+.visimisi-content1>h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boxvisimisi>h4>p {
+    color: #ddd5d5;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.boxvisimisi>img {
+    padding-top: 10px;
+}
+
+.visimisi-content1>.boxvisimisi{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.banner2 {
+    margin-left: 100px;
+    margin-right: 10px;
+    width: 700px;
+    height: 400px;
+}
+
+.banner2>img {
+    width: 570px;
+    height: 400px;
+}
+
+.branding1 {
+    width: 800px;
+    height: auto;
+    margin-left: 20px;
+    padding-top: 50px;
+}
+
+.branding1>h2 {
+    text-align: left;
+}
+
+.branding1>p {
+    color: #8A8A8A;
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 150px;
+}
+
+.branding1>button {
+    padding: 2% 15%;
+    font-weight: 500px;
+    line-height: 2;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background-color: #4D2C5E;
+    color: white;
+}
+
+.branding1>button:hover {
+    background-color: white;
+    color: #4D2C5E;
+}
+
+.course-container {
+    display: flex;
+    margin: 0 30px;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.coursebox1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.coursebox2 {
+    width: 250px;
+    height: 390px;
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+/* .course-container1 :hover {
+    background-color: rgb(240, 238, 238);
+    cursor: pointer;
+} */
+
+.course-content {
+    border: 4px solid rgba(145, 158, 171, 0.24);
+    border-radius: 16px;
+    padding: 15px 5px;
+    background-color: #FDF8EE;
+}
+
+.course-content>.img {
+    display: flex;
+    justify-content: center;
+}
+
+.course-content>.img>img {
+    width: 200px;
+    height: auto;
+}
+
+.course-content>.namecourse {
+    font-size: 15x;
+    color: #4D2C5E;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.course-content>p {
+    font-size: 12px;
+    margin: 5px 18px ;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.course-content>.companyimg {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: 0 16px;
+}
+
+.companyimg>img {
+    height: 24px;
+    width: auto;
+}
+
+.course-content>.upskill {
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.morecourse {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.morecourse>button {
+    padding: 20px 70px;
+    line-height: 2;
+    border-radius: 50px;
+    text-decoration: none;
+    outline: none;
+    background-color: #4D2C5E;
+    color: white;
+} 
+
+.main-container2 {
+    padding: 20px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+.introduction-course {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 300px;
+    width: auto;
+}
+
+.testimoni {
+    width: autos;
+    background-color: #FDF8EE;
+    padding: 10px 0;
+    margin: 50px 0;
+}
+
+
+.comment-container {
+    background-color: white;
+    border: 2px solid #D2D2D2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 300px;
+    font-size: 15px;
+}
+
+.commentid {
+    display: flex;
+    align-items: center;
+}
+
+.commentid>img {
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+}
+
+.commentid>.comment-name {
+    padding: 5px;
+}
+
+.comment-desc {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.comment-container h3 {
+    font-size: 25px;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+}
+
+.svg>.svg1 {
+    margin: 0 30px;
+}
+
+.svg>.svg2 {
+    width: 15x;
+    height: auto;
+}
+
+
+/* CSS untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+    /* section 1 */
+.banner1 {
+    margin-top: 50px;
+    padding: 50px 20px;
+}
+
+.visimisi-content1 {
+    margin: 0 20px;
+    padding: 0 20px;
+    flex-direction: column;
+    text-align: center;
+    height: 630px;
+    width: auto;
+    align-items: center;
+}
+
+.visimisi-content1>.boxvisimisi {
+    height: 200px;
+}
+
+.boxvisimisi>img {
+    width: 80px;
+    height: 80px;
+}
+    /* section 1 end here */
+
+    /* section 2 */
+.content-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner2 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.banner2>img{
+    width: 300px;
+    height: 200px;
+}
+
+.branding1 {
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+.branding1>h2 {
+    text-align: center;
+}
+
+.branding1>p {
+    padding-right: 10px;
+}
+
+.branding1>button {
+    padding: 10px 30px;
+}
+    /* section 2 end here */
+.course-container {
+    margin: 0 10px;
+}
+
+.coursebox1 {
+    flex-direction: column;
+}
+
+.coursebox2 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.course-content {
+    border: 2px solid rgba(145, 158, 171, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.course-content>.img>img {
+    width: 100%;
+}
+
+.course-content>.namecourse {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.course-content>p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.companyimg>img {
+    height: 16px;
+}
+
+.course-content>.upskill {
+    font-size: 10px;
+}
+
+.morecourse>button {
+    padding: 10px 20px;
+}
+
+.main-container2 {
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+
+.introduction-course {
+    gap: 10px;
+    height: auto;
+}
+
+.testimoni {
+    margin: 20px 0;
+}
+
+.comment-container {
+    width: 100%;
+    height: auto;
+}
+
+.commentid>img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+
+.comment-desc {
+    padding: 5px 10px;
+}
+
+.comment-container h3 {
+    font-size: 20px;
+}
+
+.svg {
+    justify-content: space-around;
+}
+
+.svg>.svg1,
+.svg>.svg2 {
+    margin: 0;
+}
+}
