@@ -28,7 +28,7 @@
 
 /* Mengubah warna teks menu ketika digerakkan */
 .navbar-content a:hover {
-    color: #4D2C5E;
+    color: rgb(162, 96, 194);
 }
 
 @media (max-width: 768px) {

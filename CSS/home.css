@@ -40,7 +40,7 @@ h2 {
     font-family: Roboto;
     font-size: 30px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 135%;
     text-align: center;
 }
@@ -96,8 +96,8 @@ h2 {
 }
 
 .banner2>img {
-    width: 570px;
-    height: 400px;
+    width: 80%;
+    height: auto;
 }
 
 .branding1 {
@@ -113,21 +113,24 @@ h2 {
 
 .branding1>p {
     color: #8A8A8A;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     padding-right: 150px;
+    line-height: 1.5;
 }
 
 .branding1>button {
     padding: 20px 100px;
-    font-weight: 500px;
-    line-height: 2;
+    font-weight: 500;
+    line-height: 1;
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     outline: none;
     background-color: #4D2C5E;
     color: white;
+    font-size: 15px;
+    margin: 20px 0;
 }
 
 /* .branding1>button:hover {
@@ -143,6 +146,9 @@ h2 {
     background-color: white;
 }
 
+.course-container h2{
+    font-weight: 700;
+}
 
 .coursebox1 {
     display: flex;
@@ -177,7 +183,7 @@ h2 {
 
 .course-content>.img>img {
     width: 200px;
-    height: auto;
+    height: 145px;
 }
 
 .course-content>.namecourse {
@@ -218,6 +224,8 @@ h2 {
     justify-content: center;
     width: auto;
     margin: 20px 0;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .morecourse>button {
