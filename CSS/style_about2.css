@@ -275,7 +275,7 @@ body {
 
 
 /* ------------footer------------ */
-
+/* 
 .social-icons li a {
     display: block;
     width: 40px;
@@ -367,21 +367,11 @@ body {
     text-align: center;
     color: white;
     font-size: 20px;
-}
+} */
 
 /* Media query untuk mode mobile */
 @media (max-width: 768px) {
-    .navbar-content {
-        flex-direction: row-reverse; /* Memutar tautan navigasi ke sebelah kanan */
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    .navbar-content a {
-        margin: 0;
-        font-size: 18px; /* Mengurangi ukuran teks menu pada mode mobile */
-    }
-
+    
     /* Tambahan CSS untuk ikon menu hamburger */
     .menu-icon {
         display: block; /* Menampilkan ikon hanya pada mode mobile */

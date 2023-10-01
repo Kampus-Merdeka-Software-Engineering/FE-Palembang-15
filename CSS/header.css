@@ -32,27 +32,52 @@
 }
 
 @media (max-width: 768px) {
-    /* responsive untuk navbar */
-    .navbar-content {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 10px;
-    }
+/* responsive untuk navbar */
+.navbar-content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+}
 
-    .navbar-content {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+.navbar-content {
+    flex-direction: column;
+    align-items: flex-end;
+}
 
-    .logo {
-        max-width: 100px;
-        height: auto;
-    }
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .logo {
-        max-width: 150px;
-        height: auto;
-    }
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+    
+.menu-toggle {
+    display: flex;
+}
+
+.navbar-content {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #FDF8EE;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-content.active {
+    display: flex;
+    opacity: 1;
+}
+    
 }

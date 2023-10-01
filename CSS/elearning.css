@@ -1,10 +1,6 @@
 @import url(<link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
 
-/* @media screen {
-    min-width: 1000px;
-} */
-
 body {
     width: 100%;
     height: auto;
@@ -18,12 +14,14 @@ body {
     display: flex;
     justify-content: center;
     background-color: #FDF8EE;
-    padding: 10% 2%;
-    margin-bottom: 2%;
+    padding: 100px 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .branding1 {
-    margin: 0 2%;
+    margin: 0 20px;
+    padding-top: 90px;
 }
 
 .branding1>h2 {
@@ -34,33 +32,35 @@ body {
     color: #8A8A8A;
     font-size: 20px;
     font-weight: 400;
-    padding-right: 5%;
+    padding-right: 50px;
 }
 
 .branding1>button {
-    padding: 2% 15%;
-    font-size: 20px;
+    padding: 20px 100px;
+    font-weight: 500px;
     line-height: 2;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     outline: none;
     background-color: #4D2C5E;
     color: white;
-    border-style: solid;
-    border-color: #4D2C5E;
 }
 
 h2 {
-    color: #050C26;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4D2C5E;
     font-family: Roboto;
-    font-size: 50px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 800;
     line-height: 135%;
-    /* 93.15px */
+    text-align: center;
 }
-
 
 /* ISI KONTEN */
 
@@ -69,8 +69,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0%;
-    margin-top: 0%;
+    margin: 50px 70px;
     border: #050C26;
     border-radius: 1;
 }
@@ -85,103 +84,63 @@ h2 {
     align-items: center;
 }
 
+.banner3>img {
+    width: 490px;
+}
+
 .resume-content {
     display: flex;
     flex-direction: column;
 }
 
 .branding2 .resume-content .box {
-    margin: 10% 10%;
-    padding-right: 5%;
-    width: 100%;
-    height: 100%;
+    margin: 10px 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    width: 600px;
+    height: 110px;
     flex-shrink: 0;
-    border-radius: 50px;
+    border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFFBFB;
     mix-blend-mode: darken;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-
-/* .branding2>img {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 15%;
-    margin-top: 2%;
-} */
-
 .branding2 .resume-content .box h3 {
     color: #4D2C5E;
     font-family: Roboto;
-    font-size: 35px;
+    padding-left: 10px;
+    font-size: 24px;
     text-align: left;
-    padding-left: 3%;
     font-weight: 700;
-    /* CODE ANEH
-    text-align: left;
-    font-family: Roboto;
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 5%;
-    padding: 1% 3%;
-    61.56px */
-}
-
-.branding2 .resume-content .box {
-    margin-top: 0;
-    margin-bottom: 5%;
+    margin: 20px;
+    margin-bottom: 10px;
 }
 
 .box>p {
     color: #8A8A8A;
     font-family: Roboto;
-    font-size: 26px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    padding: 0% 3%;
-    margin-top: 0;
-    margin-bottom: 5%;
+    padding: 0 30px;
+    margin: 0;
     text-align: justify;
 }
 
 
 /* LIST COURSE */
 
-h2 {
-    margin: 0;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    padding: 0;
-    box-sizing: border-box;
-    color: #4D2C5E;
-    font-family: Roboto;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 135%;
-    text-align: center;
-}
-
-
-/* .course-container {
+/* 
+.course-container {
     display: flex;
+    margin: 0 30px;
+    margin-top: 30px;
     justify-content: center;
-    background-color: #4D2C5E;
-    border-radius: 15px;
-    color: white;
-    width: 60%;
-    height: 30%;
-    box-sizing: border-box;
-    flex-flow: row;
-    scroll-snap-type: mandatory;
-    scroll-behavior: smooth;
-    margin: 0 20%;
-    padding: 0 5%;
-} */
+}
 
 .listbox1 {
     display: flex;
@@ -194,13 +153,13 @@ h2 {
     justify-content: space-between;
 }
 
-.listbox2 :hover {
+/* .listbox2 :hover {
     background-color: rgb(240, 238, 238);
     cursor: pointer;
     border-radius: 16px;
-}
+} */
 
-.list-container {
+/* .list-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -246,8 +205,84 @@ h2 {
     margin-top: 10%;
     margin-bottom: 3%;
     padding-left: 10%;
+}  */
+
+.course-container {
+    display: flex;
+    margin: 30px 30px 50px 30px;
+    justify-content: center;
+    background-color: white;
 }
 
+
+.coursebox1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.coursebox2 {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+/* .course-container1 :hover {
+    background-color: rgb(240, 238, 238);
+    cursor: pointer;
+} */
+
+.course-content {
+    border: 4px solid rgba(145, 158, 171, 0.24);
+    border-radius: 16px;
+    padding: 15px 5px;
+    background-color: #FDF8EE;
+}
+
+.course-content>.img {
+    display: flex;
+    justify-content: center;
+}
+
+.course-content>.img>img {
+    width: 200px;
+    height: auto;
+}
+
+.course-content>.namecourse {
+    font-size: 15x;
+    color: #4D2C5E;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.course-content>p {
+    font-size: 12px;
+    margin: 5px 18px ;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.course-content>.companyimg {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: 0 16px;
+}
+
+.companyimg>img {
+    height: 24px;
+    width: auto;
+}
+
+.course-content>.upskill {
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /* CSS untuk perangkat mobile */
 @media screen and (max-width: 768px) {
@@ -258,16 +293,17 @@ h2 {
 
 .branding1 {
     margin: 0 2%;
+    padding: 0;
 }
 
 .banner2>img {
     margin-top: 40px;
-    width: auto;
-    height: 250px;
+    width: 350px;
+    height: auto;
 }
 
 .branding1>button {
-    padding: 10px 15px;
+    padding: 15px 70px;
 }
 
 h2 {
@@ -278,6 +314,7 @@ h2 {
     flex-direction: column;
     width: auto;
     height: auto;
+    margin: 20px 15px;
 }
 
 .branding2 .resume-content .box {
@@ -300,6 +337,11 @@ h2 {
     margin-bottom: 50px;
 }
 
+.coursebox1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+}
 
 }
 
@@ -325,42 +367,5 @@ h2 {
     font-size: 36px;
 }
 
-.box>p {
-    font-size: 24px;
 }
 
-h2.list-header {
-    font-size: 42px;
-}
-}
-
-/* CSS untuk perangkat desktop */
-@media screen and (min-width: 1025px) {
-.content-container {
-    padding: 10% 2%;
-}
-
-.branding1 {
-    margin: 0 2%;
-}
-
-.branding1>button {
-    padding: 15px 30px;
-}
-
-h2 {
-    font-size: 48px;
-}
-
-.branding2 .resume-content .box h3 {
-    font-size: 48px;
-}
-
-.box>p {
-    font-size: 26px;
-}
-
-h2.list-header {
-    font-size: 60px;
-}
-}

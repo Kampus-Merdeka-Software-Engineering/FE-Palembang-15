@@ -26,7 +26,6 @@ body {
 .banner1>img {
     width: 100%;
     border-radius: 50px;
-    box-shadow: #4D2C5E;
     height: auto;
     margin: 0 auto;
 }
@@ -120,7 +119,7 @@ h2 {
 }
 
 .branding1>button {
-    padding: 2% 15%;
+    padding: 20px 100px;
     font-weight: 500px;
     line-height: 2;
     border-radius: 50px;
@@ -131,14 +130,15 @@ h2 {
     color: white;
 }
 
-.branding1>button:hover {
+/* .branding1>button:hover {
     background-color: white;
     color: #4D2C5E;
-}
+} */
 
 .course-container {
     display: flex;
     margin: 0 30px;
+    margin-top: 30px;
     justify-content: center;
     background-color: white;
 }
@@ -152,7 +152,7 @@ h2 {
 
 .coursebox2 {
     width: 250px;
-    height: 390px;
+    height: 330px;
     display: flex;
     margin: 15px;
     justify-content: space-between;
@@ -217,10 +217,11 @@ h2 {
     display: flex;
     justify-content: center;
     width: auto;
+    margin: 20px 0;
 }
 
 .morecourse>button {
-    padding: 20px 70px;
+    padding: 15px 70px;
     line-height: 2;
     border-radius: 50px;
     text-decoration: none;
@@ -286,7 +287,7 @@ h2 {
     font-size: 25px;
 }
 
-.svg {
+/* .svg {
     display: flex;
     justify-content: center;
 }
@@ -298,12 +299,15 @@ h2 {
 .svg>.svg2 {
     width: 15x;
     height: auto;
-}
+} */
 
 
 /* CSS untuk perangkat mobile */
 @media screen and (max-width: 768px) {
     /* section 1 */
+h2 {
+    font-size: 25px;
+}
 .banner1 {
     margin-top: 50px;
     padding: 50px 20px;
@@ -314,18 +318,19 @@ h2 {
     padding: 0 20px;
     flex-direction: column;
     text-align: center;
-    height: 630px;
+    height: 530px;
     width: auto;
     align-items: center;
 }
 
 .visimisi-content1>.boxvisimisi {
-    height: 200px;
+    height: 170px;
 }
 
 .boxvisimisi>img {
     width: 80px;
     height: 80px;
+    padding-top: 50px;
 }
     /* section 1 end here */
 
@@ -343,8 +348,8 @@ h2 {
 }
 
 .banner2>img{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: auto;
 }
 
 .branding1 {
@@ -367,15 +372,19 @@ h2 {
 }
     /* section 2 end here */
 .course-container {
-    margin: 0 10px;
+    margin: 0 50px;
 }
 
 .coursebox1 {
+    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 30px;
 }
 
 .coursebox2 {
-    width: 100%;
+    width: 250px;
     height: auto;
     margin: 10px 0;
 }
@@ -408,17 +417,23 @@ h2 {
     font-size: 10px;
 }
 
+.morecourse {
+    margin: 25px 0;
+}
 .morecourse>button {
     padding: 10px 20px;
 }
 
 .main-container2 {
-    flex-direction: column;
     padding: 10px;
     margin: 5px;
 }
 
 .introduction-course {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 10px;
     height: auto;
 }
@@ -428,6 +443,7 @@ h2 {
 }
 
 .comment-container {
+    padding: 10px;
     width: 100%;
     height: auto;
 }
@@ -444,14 +460,5 @@ h2 {
 
 .comment-container h3 {
     font-size: 20px;
-}
-
-.svg {
-    justify-content: space-around;
-}
-
-.svg>.svg1,
-.svg>.svg2 {
-    margin: 0;
-}
+}   
 }
