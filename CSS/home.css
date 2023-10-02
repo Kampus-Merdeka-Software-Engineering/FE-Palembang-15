@@ -377,16 +377,19 @@ h2 {
 
 .coursebox1 {
     display: flex;
+    justify-content: start;
     flex-direction: column;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding: 0 30px;
+    align-items: center;
 }
 
 .coursebox2 {
     width: 250px;
     height: auto;
-    margin: 10px 0;
+    margin: 10px 0; 
+    justify-content: center;
 }
 
 .course-content {
@@ -461,4 +464,9 @@ h2 {
 .comment-container h3 {
     font-size: 20px;
 }   
+}
+
+/* CSS untuk perangkat mobile */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
 }
