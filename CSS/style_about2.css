@@ -156,6 +156,7 @@ body {
     background-color: #FDF8EE;
     padding: 20px;
     text-align: right;
+    margin-bottom: 30px;
 }
 
 /* Mengatur gaya teks di dalam .Section-2 */
@@ -218,6 +219,7 @@ body {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .comment-card h2 {
@@ -231,6 +233,7 @@ body {
 .form-group {
     text-align: left;
     margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 .form-group label {
@@ -270,104 +273,6 @@ body {
 .comment-card button:hover {
     background-color: #4D2C5E;
 }
-
-
-
-
-/* ------------footer------------ */
-/* 
-.social-icons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    line-height: 40px;
-    transition: background-color 0.3s ease;
-}
-
-.social-icons li a:hover {
-    background-color: #4D2C5E;
-}
-
-.footer-container {
-    background-color: #4D2C5E;
-    color: white;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.footer-logo img {
-    width: 150px;
-    height: auto;
-}
-
-.footer-content p {
-    font-size: 18px;
-    margin-top: -30px;
-    margin-bottom: 60px;
-}
-
-.footer-social-icons ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 20px;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none; 
-}
-
-.footer-links a:hover {
-    color: #FDF8EE;
-}
-
-.footer-column {
-    flex: 1;
-    margin-left: 30px;
-    padding-bottom: 30px;
-}
-
-.footer-column h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.footer-column p {
-    font-size: 16px;
-}
-
-.footer {
-    height: 50px;
-    background-color: #341E40;
-    margin-top: -30px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-}
-
-.footer p {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-} */
 
 /* Media query untuk mode mobile */
 @media (max-width: 768px) {

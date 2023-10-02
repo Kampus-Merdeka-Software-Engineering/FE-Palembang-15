@@ -32,9 +32,9 @@ body {
     width: 65%;
 }
 
-.video-learning video {
+.video-learning iframe {
     width: 100%;
-    height: auto;
+    height: 490px;
 }
 
 .course-content-container {
