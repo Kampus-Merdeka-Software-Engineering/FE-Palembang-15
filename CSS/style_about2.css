@@ -151,15 +151,49 @@ body {
 
 /* --------------.section 2----------------- */
 
-/* Mengatur gaya konten section */
-.Section-2 {
+.member-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 100px;
+}
+
+.member-card>article {
+    box-shadow: 0px 8px 8px 0 rgba(0 0 0 2);
+    border-radius: 8px;
+    text-align: center;
+    background: #FDF8EE;
+    width: 280px;
+    height: 410px;
+    transition: 0.2s transform;
+    cursor: pointer;
+}
+
+.contact-member {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #4D2C5E;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+
+}
+   
+
+/* .Section-2 {
     background-color: #FDF8EE;
     padding: 20px;
     text-align: right;
     margin-bottom: 30px;
 }
 
-/* Mengatur gaya teks di dalam .Section-2 */
+
 .Section-2 h2 {
     color: #333333;
     font-size: 24px;
@@ -167,14 +201,14 @@ body {
     text-align: right;
 }
 
-/* Mengatur gaya komentar container */
+
 .comment-container {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
 
-/* Mengatur gaya komentar card */
+
 .comment-card {
     flex: 0 0 calc(25% - 20px);
     background-color: #fff;
@@ -186,7 +220,7 @@ body {
     text-align: left;
 }
 
-/* Mengatur gaya nama pengguna */
+
 .comment-card h3 {
     color: #333;
     font-size: 18px;
@@ -194,20 +228,19 @@ body {
     margin-top: 0;
 }
 
-/* Mengatur gaya tanggal */
 .comment-card p:first-child {
     color: #666;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-/* Mengatur gaya isi komentar */
+
 .comment-card p:last-child {
     color: #777;
     font-size: 16px;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
-}
+} */
 
 /* ----------Section 3------------- */
 /* Mengatur gaya form testimoni */
