@@ -21,16 +21,14 @@
         <div class="main-container">
             <div class="video-learning">
                 <div class="video-container">
-                    <!-- <video controls autoplay> -->
-                        <iframe src="https://drive.google.com/file/d/1UCQt9MHC6CxSUUOaVIs8u9iYiKRKp0Lw/preview" allow="autoplay"></iframe>
-                    <!-- </video> -->
+                    <iframe id="courseVideo" allow="autoplay"></iframe>
                 </div>
                 <div class="course-content-container">
                     <h1>Course Content</h2>
-                        <div class="course-item">
+                    <div class="course-list" id="courseList">
+                        <!-- <div class="course-item">
                             <h2>01</h2>
                             <div class="course-details">
-                                <p class="course-duration">5:35 mins</p>
                                 <p class="course-title">Welcome to the course</p>
                             </div>
                         </div>
@@ -38,7 +36,6 @@
                         <div class="course-item">
                             <h2>02</h2>
                             <div class="course-details">
-                                <p class="course-duration">19:04 mins</p>
                                 <p class="course-title">Design Thinking-Intro</p>
                             </div>
                         </div>
@@ -46,7 +43,6 @@
                         <div class="course-item">
                             <h2>03</h2>
                             <div class="course-details">
-                                <p class="course-duration">12:48 mins</p>
                                 <p class="course-title">Design Thinking Process</p>
                             </div>
                         </div>
@@ -54,10 +50,10 @@
                         <div class="course-item">
                             <h2>04</h2>
                             <div class="course-details">
-                                <p class="course-duration">37:53 mins</p>
                                 <p class="course-title">Customer Perspective</p>
                             </div>
-                        </div>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +133,40 @@
             $("#footer-container").load("footer.html");
         });
     </script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const courseId = urlParams.get('courseId');
+        const episode = parseInt(urlParams.get('episode')) || 1;
+        console.log('courseId:', courseId);
+        console.log('episode:', episode);
 
+        const loadCourseContent = async (courseId, episode) => {
+            const response = await fetch(`https://broad-minute-production.up.railway.app/contents/${courseId}/${episode}`);
+
+            const responseData = await response.json();
+            console.log("dataaa", responseData)
+            const videoUrl = responseData.data[episode - 1].video;
+            console.log('Video URL:', videoUrl);
+            document.getElementById('courseVideo').src = videoUrl;
+
+            // const responseAll = await fetch(`https://broad-minute-production.up.railway.app/${courseId}`);
+            // const responseAllData = await responseAll.json();
+            // const AllContents = responseAllData.data;
+
+            const courseList = document.getElementById('courseList');
+            const contentTitle = responseData.data.judulContent;
+            console.log('jjudul:', contentTitle);
+
+            const courseItem = document.createElement('div');
+            courseItem.innerHTML = `<h2>${episode}</h2>
+                                       <div class="course-details">
+                                           <p class="course-title">${contentTitle}</p>
+                                       </div>`;
+            courseList.appendChild(courseItem);
+        };
+
+        loadCourseContent(courseId, episode);
+    </script>
 </body>
 
 </html>
