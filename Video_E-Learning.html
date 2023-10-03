@@ -61,8 +61,8 @@
 
     <div class="main-container2">
         <div class="introduction-course">
-            <h2>TEKNOLOGI</h2>
-            <P>Kemajuan teknologi saat ini tidak bisa dipisahkan dari kehidupan masyarakat. Berbagai informasi yang terjadi di berbagai belahan dunia kini telah dapat langsung kita ketahui berkat kemajuan teknologi (globalisasi). Pengaruh globalisasi, sekarang
+            <h2 id="judul-content"></h2>
+            <P id="deskripsi">Kemajuan teknologi saat ini tidak bisa dipisahkan dari kehidupan masyarakat. Berbagai informasi yang terjadi di berbagai belahan dunia kini telah dapat langsung kita ketahui berkat kemajuan teknologi (globalisasi). Pengaruh globalisasi, sekarang
                 ini tidak dapat dipungkiri lagi karena banyaknya kemajuan teknologi yang masuk kedalam Negara dan bangsa kita.Berikut ini adalah beberapa tindakan yang bisa menghindari penyalah gunaan Handphone.</P>
         </div>
         <hr class="course-divider">
@@ -150,12 +150,19 @@
             console.log('Video URL:', videoUrl);
             document.getElementById('courseVideo').src = videoUrl;
 
+            const judulContent = responseData.data[episode - 1].judulContent;
+            document.getElementById('judul-content').innerHTML = judulContent;
+
+            const deskripsiContent = responseData.data[episode - 1].deskripsi;
+            document.getElementById('deskripsi').innerHTML = deskripsiContent;
+
             const responseAll = await fetch(`https://broad-minute-production.up.railway.app/contents/courses/${courseId}`);
             const responseAllData = await responseAll.json();
             const AllContents = responseAllData.data;
 
             const courseList = document.getElementById('courseList');
-                AllContents.forEach((content, index) => {
+
+            AllContents.forEach((content, index) => {
                     const contentItem = document.createElement('div');
                     contentItem.classList.add("course-item");
 
@@ -171,7 +178,10 @@
                         hrElement.classList.add("course-divider");
                         courseList.appendChild(hrElement);
                      }
-                });
+            });
+
+
+
         };
 
         loadCourseContent(courseId, episode);
