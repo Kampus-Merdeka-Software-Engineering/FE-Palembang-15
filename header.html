@@ -6,32 +6,26 @@
     <title>Website Header</title>
     <link rel="stylesheet" href="css/header.css">
 </head>
-<script>
-            // Tambahkan event listener untuk toggle tombol hamburger
-            document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton = document.querySelector('.menu-toggle');
-            const navbarContent = document.querySelector('.navbar-content');
-            
-            toggleButton.addEventListener('click', function () {
-                navbarContent.classList.toggle('active');
-            });
-        });
-</script>
 <body>
     <header>
         <nav class="navbar-container">
-            <img class="logo" src="image/Logo Educareerskill.png">
+            <a href="index.html">
+                <img class="logo" src="image/Logo Educareerskill.png">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="E-Learning.html">E-learning</a></li>
+                <li><a href="About2.html">About</a></li>
+            </ul>    
+              
             <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="navbar-content">
-                <a href="home.html">Home</a>
-                <a href="E-Learning.html">E-learning</a>
-                <a href="About2.html">About</a>
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
+    <script src="script.js"></script>
     </header>
 </body>
 </html>

@@ -245,7 +245,7 @@ h2 {
     height: auto;
 }
 
-.introduction-course {
+.comment-box {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -393,10 +393,10 @@ h2 {
     align-items: center;
 }
 
-.coursebox2 {
+.coursebox1>.coursebox2 {
     width: 250px;
     height: auto;
-    margin: 10px 0; 
+    margin: 15px 0; 
     justify-content: center;
 }
 
@@ -440,12 +440,12 @@ h2 {
     margin: 5px;
 }
 
-.introduction-course {
+.comment-box {
     display: flex;
     justify-content: start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
-    gap: 10px;
+    gap: 30px;
     height: auto;
 }
 
