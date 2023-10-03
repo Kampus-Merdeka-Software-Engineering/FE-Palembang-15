@@ -274,26 +274,25 @@ h2 {
     margin-top: 10%;
     margin-bottom: 3%;
     padding-left: 10%;
-}  */
+}
+
+.list-container {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .course-container {
-    display: flex;
-    margin: 30px 30px 50px 30px;
-    justify-content: center;
     background-color: white;
 }
 
-
 .coursebox1 {
     display: flex;
-    justify-content: center;
-    width: auto;
+    flex-wrap: wrap;  
 }
 
 .coursebox2 {
     width: 250px;
-    height: 330px;
-    display: flex;
+    height: 290px;
     margin: 15px;
     justify-content: space-between;
 }
@@ -308,6 +307,7 @@ h2 {
     border-radius: 16px;
     padding: 15px 5px;
     background-color: #FDF8EE;
+    height: 250px;
 }
 
 .course-content>.img {
