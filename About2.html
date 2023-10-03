@@ -185,47 +185,11 @@
     </div>
 </section>
 
-   <!-- Section 3 -->
-<section class="Section-3">
-    <div class="comment-card">
-        <h2>Form Testimoni</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nama">Nama Lengkap</label>
-                <input type="text" id="nama" name="nama" class="rounded" required>
-            </div>
-            <div class="form-group">
-                <label for="jabatan">Jabatan</label>
-                <input type="text" id="jabatan" name="jabatan" class="rounded" required>
-            </div>
-            <div class="form-group">
-                <label for="perusahaan">Perusahaan</label>
-                <input type="text" id="perusahaan" name="perusahaan" class="rounded" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Resmi</label>
-                <input type="email" id="email" name="email" class="rounded" required>
-            </div>
-            <div class="form-group">
-                <label for="layanan">Layanan</label>
-                <input type="text" id="layanan" name="layanan" class="rounded" required>
-            </div>
-            <div class="form-group testimonial">
-                <label for="testimoni">Testimoni Mengenai Materi</label>
-                <textarea id="testimoni" name="testimoni" class="rounded testimonial-box" required></textarea>
-            </div>
-            <button type="submit">SUBMIT</button>
-        </form>
-    </div>
-</section>
-=======
-    </section>
-
     <!-- Section 3 -->
     <section class="Section-3">
         <div class="comment-card">
             <h2>Form Testimoni</h2>
-            <form action="#" method="POST">
+            <form id="testimoniForm" action="#" method="POST">
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
                     <input type="text" id="nama" name="nama" class="rounded" required>
@@ -262,11 +226,32 @@
 
                     // Add an event listener to the button to listen for clicks
                     button.addEventListener("click", buttonClick);
+
+                    const handleSubmitForm = (event) => {
+                        event.preventDefault();
+
+                        fetch("https://broad-minute-production.up.railway.app/testimonials", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                nama: document.getElementById("nama").value,
+                                jabatan: document.getElementById("jabatan").value,
+                                perusahaan: document.getElementById("perusahaan").value,
+                                email: document.getElementById("email").value,
+                                layanan: document.getElementById("layanan").value,
+                                testimoni: document.getElementById("testimoni").value,
+                            }),
+                        });
+                    };
+
+                    document.getElementById("testimoniForm").onsubmit = handleSubmitForm;
+
                 </script>
             </form>
         </div>
     </section>
->>>>>>> Stashed changes
 
     <!-- Footer -->
     <div id="footer-container"></div>
