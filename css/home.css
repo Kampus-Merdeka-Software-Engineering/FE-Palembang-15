@@ -1,7 +1,3 @@
-/* Mengatur font untuk seluruh teks pada halaman */
-
-@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
 body {
     width: 100%;
     height: auto;
@@ -85,7 +81,6 @@ h2 {
     justify-content: center;
     margin: auto;
     padding-top: 50px;
-    margin-bottom: 5%;
     background-color: white;
 }
 
@@ -313,7 +308,7 @@ h2 {
 } */
 
 
-/* CSS untuk perangkat mobile */
+/* CSS untuk perangkat tablet */
 
 @media screen and (max-width: 768px) {
     /* section 1 */
@@ -322,6 +317,7 @@ h2 {
     }
     .banner1 {
         margin-top: 50px;
+        margin-top: 70px;
         padding: 50px 20px;
     }
     .visimisi-content1 {
