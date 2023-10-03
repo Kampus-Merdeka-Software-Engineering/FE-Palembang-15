@@ -1,3 +1,7 @@
+/* Mengatur font untuk seluruh teks pada halaman */
+
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
@@ -19,13 +23,17 @@ body {
     z-index: 100;
 }
 
+
 /* Mengatur gaya logo */
+
 .logo {
     max-width: 200px;
     height: auto;
 }
 
+
 /* Mengatur gaya menu navigasi */
+
 .navbar-content a {
     text-decoration: none;
     color: #333;
@@ -34,13 +42,18 @@ body {
     transition: color 0.3s ease;
 }
 
+
 /* Mengubah warna teks menu ketika digerakkan */
+
 .navbar-content a:hover {
     color: #4D2C5E;
 }
 
+
 /* Mengatur gaya tombol Sign In dan Sign Up */
-.button-sign1, .button-sign2 {
+
+.button-sign1,
+.button-sign2 {
     background-color: transparent;
     color: #333;
     border: 1px solid #4D2C5E;
@@ -51,27 +64,34 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
 /* Mengubah warna latar belakang tombol ketika digerakkan */
-.button-sign1:hover, .button-sign2:hover {
+
+.button-sign1:hover,
+.button-sign2:hover {
     background-color: #4D2C5E;
     color: #fff;
 }
- 
+
 
 /* ------------------------ SECTION 1-------------------------------- */
 
+
 /* Mengatur gaya "Section 1" */
+
 .content-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     margin-top: 65px;
-    background-color: #FDF8EE; /* Warna background untuk Section 1 */
+    background-color: #FDF8EE;
+    /* Warna background untuk Section 1 */
 }
 
 
 /* Mengatur gaya teks di sisi kiri */
+
 .text-container {
     flex: 1;
     text-align: left;
@@ -79,7 +99,9 @@ body {
     margin-right: 20px;
 }
 
+
 /* Mengatur gaya tombol Join Sekarang dan Free Trial */
+
 .text-container button {
     background-color: #4D2C5E;
     color: #FDF8EE;
@@ -91,45 +113,56 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
 /* Mengatur gaya gambar di sisi kanan */
+
 .image-container {
     flex: 1;
     text-align: right;
     padding: 20px;
 }
 
+
 /* Mengatur ukuran maksimum gambar */
+
 .image-container img {
     max-width: 70%;
     height: auto;
 }
 
+
 /* --------------------SECTION 1 -------------------------- */
 
 
-
 /* Mengatur gaya konten section */
+
 .Section-1 {
     background-color: #ffff;
     padding: 20px;
     text-align: center;
 }
 
+
 /* Mengatur gaya teks di dalam .Section-1 */
+
 .Section-1 h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+
 /* Mengatur gaya paragraf di dalam .Section-1 */
+
 .Section-1 p {
     color: #666;
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+
 /* Mengatur gaya gambar di dalam .Section-1 */
+
 .Section-1 .image-container {
     display: flex;
     justify-content: center;
@@ -137,12 +170,15 @@ body {
     flex-wrap: wrap;
 }
 
+
 /* Mengatur gaya gambar dalam satu baris */
+
 .Section-1 .image-container img {
     max-width: 300px;
     height: auto;
     margin: 0 10px;
 }
+
 
 /* --------------.section 2----------------- */
 
@@ -183,7 +219,7 @@ article>img {
     cursor: pointer;
     width: 80%;
 }
-   
+
 
 /* .Section-2 {
     /*
@@ -244,11 +280,21 @@ article>img {
 
 
 /* ----------Section 3------------- */
+
+
 /* Mengatur gaya form testimoni */
-.comment-card {
+
+.Section-2 .comment-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-container .comment-card {
     max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 2% 3% 0 3%;
+    background-color: #FDF8EE;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -263,7 +309,9 @@ article>img {
     margin-bottom: 10px;
 }
 
+
 /* Mengatur gaya form group (label dan input) */
+
 .form-group {
     text-align: left;
     margin-bottom: 15px;
@@ -283,17 +331,24 @@ article>img {
     padding: 10px;
     margin-top: 5px;
     border: none;
-    border-radius: 10px; /* Mengubah bentuk kolom menjadi lingkaran */
+    border-radius: 10px;
+    /* Mengubah bentuk kolom menjadi lingkaran */
     background-color: #f2f2f2;
 }
 
+
 /* Mengatur gaya kolom testimonial yang lebih besar */
+
 .testimonial-box {
-    height: 150px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
-    resize: none; /* Mencegah pemaksaan perubahan ukuran oleh pengguna */
+    height: 150px;
+    /* Sesuaikan tinggi sesuai kebutuhan Anda */
+    resize: none;
+    /* Mencegah pemaksaan perubahan ukuran oleh pengguna */
 }
 
+
 /* Mengatur gaya tombol submit */
+
 .comment-card button {
     background-color: #4D2C5E;
     color: #fff;
@@ -308,37 +363,34 @@ article>img {
     background-color: #4D2C5E;
 }
 
+
 /* Media query untuk mode mobile */
+
 @media (max-width: 768px) {
-    
     /* Tambahan CSS untuk ikon menu hamburger */
     .menu-icon {
-        display: block; /* Menampilkan ikon hanya pada mode mobile */
+        display: block;
+        /* Menampilkan ikon hanya pada mode mobile */
         font-size: 30px;
         cursor: pointer;
     }
-    
     /* Mengatur tampilan "Section 1" pada mode mobile */
     .content-container {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-
     .text-container {
         text-align: center;
         padding: 20px;
     }
-
     .text-container button {
         margin: 10px;
     }
-
     .image-container {
         text-align: center;
         padding: 20px;
     }
-
     .image-container img {
         max-width: 100%;
         height: auto;

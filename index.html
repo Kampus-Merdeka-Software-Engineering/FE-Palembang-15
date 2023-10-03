@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
     <!-- heading start here -->
     <div id="header-container"></div>
     <script>
-        $(function(){
+        $(function() {
             $("#header-container").load("header.html");
         });
     </script>
@@ -33,19 +34,19 @@
                     <div class="boxvisimisi">
                         <img src="image/vission.png" alt="">
                         <h4>Visi
-                        <p class="visi_misi1">Menjadi bimbel yang unggul dalam memberikan pendidikan berkualitas, berinovasi dan berkontribusi positif untuk mengembangkan Potensi diri. </p>
+                            <p class="visi_misi1">Menjadi bimbel yang unggul dalam memberikan pendidikan berkualitas, berinovasi dan berkontribusi positif untuk mengembangkan Potensi diri. </p>
                         </h4>
                     </div>
                     <div class="boxvisimisi">
                         <img src="image/mission.png" alt="">
                         <h4>Misi
-                        <p class="visi_misi2">Mengembangkan kurikulum yang komprehensif dan relavan dengan kebutuhan peminat. Serta menerapkan metode pembelajaran yang inovatif dan efektif untuk meningkatkan skill.</p>
+                            <p class="visi_misi2">Mengembangkan kurikulum yang komprehensif dan relavan dengan kebutuhan peminat. Serta menerapkan metode pembelajaran yang inovatif dan efektif untuk meningkatkan skill.</p>
                         </h4>
                     </div>
                     <div class="boxvisimisi">
                         <img src="image/profil.png" alt="">
                         <h4>Profile
-                        <p class="visi_misi3">Aplikasi belajar yang menyediakan lebih dari 100 jt+ modul pembelajaran diberbagai bidang, dan dibimbing langsung oleh mentor yang ahli di bidangnya.</p>
+                            <p class="visi_misi3">Aplikasi belajar yang menyediakan lebih dari 100 jt+ modul pembelajaran diberbagai bidang, dan dibimbing langsung oleh mentor yang ahli di bidangnya.</p>
                         </h4>
                     </div>
                 </div>
@@ -53,11 +54,11 @@
         </div>
     </div>
     <!-- content 1 end here -->
-    
+
     <!-- content 2 start here -->
     <div class="content-container">
         <div class="banner2">
-            <img src="image/banner2.gif"> 
+            <img src="image/banner2.gif">
         </div>
         <div class="branding1">
             <h2 style="font-family: Roboto, sans-serif;">Coba <span style="font-weight: 800;">GRATIS</span> Kelas Online <br>Sekarang!</h2>
@@ -72,49 +73,80 @@
         <div class="course-container">
             <div style="opacity: 1; transform: none;">
                 <h2 class="h2course" style="font-family: Roboto, sans-serif;">Pilih Kelas Terpopuler yang Paling dibutuhkan Perusahaan Besar!</h2>
-                    <div class="coursebox1">
-                    </div>
+                <div class="coursebox1">
+                </div>
             </div>
         </div>
+        <script>
+            const getPopularCourses = async() => {
+                const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
+                const responseData = await response.json();
+                const popularCourses = responseData.data;
+                const coursebox1 = document.querySelector(".coursebox1");
+
+                popularCourses.forEach((course) => {
+                    const courseDiv = document.createElement("div");
+                    courseDiv.classList.add("coursebox2");
+
+                    courseDiv.innerHTML = `
+                        <div class="course-content">
+                            <div class="img">
+                                <img src="${course.thumbnail}" alt="" referrerpolicy="no-referrer">
+                            </div>
+                            <h4 class="namecourse">${course.judulCourse}</h4>
+                            <p class="upskill">Skill yang diperoleh: ${course.skillDiperoleh}</p>
+                            <p>${course.rating} ⭐ (${course.ulasan}) <br>
+                                ${course.tingkat} Professional Certificate</p>
+                        </div>`;
+
+                    coursebox1.appendChild(courseDiv);
+                });
+            };
+
+            getPopularCourses();
+        </script>
     </div>
     <div class="morecourse">
-        <button id="kelas">Lihat Kelas Selengkapnya</button>
-    </div>   
+        <button>Lihat Kelas Selengkapnya</button>
+    </div>
 
-    
+
     <div class="testimoni">
         <h2 style="font-family: Roboto, sans-serif;">Testimoni dari Para Pengguna</h2>
         <div class="main-container2">
             <div class="comment-box">
                 <div class="comment-container">
                     <div class="commentid">
-                    <img src="image/Ellipse 5.png" alt="">
+                        <img src="image/Ellipse 5.png" alt="">
                         <div class="comment-name">
-                        <h3>John</h3>
-                        <p class="comment-jabatan">UI/UX Designer</p>
+                            <h3>John</h3>
+                            <p class="comment-jabatan">UI/UX Designer</p>
                         </div>
                     </div>
-                    <p class="comment-desc">Saya sangat senang mengikuti kursus online ini. Materi yang diajarkan sangat relevan dengan pekerjaan saya, dan instrukturnya sangat berpengetahuan. Saya telah memperoleh banyak keterampilan baru dan telah menerapkannya dalam pekerjaan sehari-hari saya. Terima kasih banyak!</p>
+                    <p class="comment-desc">Saya sangat senang mengikuti kursus online ini. Materi yang diajarkan sangat relevan dengan pekerjaan saya, dan instrukturnya sangat berpengetahuan. Saya telah memperoleh banyak keterampilan baru dan telah menerapkannya dalam pekerjaan
+                        sehari-hari saya. Terima kasih banyak!</p>
                 </div>
                 <div class="comment-container">
                     <div class="commentid">
-                    <img src="image/Ellipse 5.png" alt="">
+                        <img src="image/Ellipse 5.png" alt="">
                         <div class="comment-name">
-                        <h3>Grace</h3>
-                        <p class="comment-jabatan">Front-End Engineer</p>
+                            <h3>Grace</h3>
+                            <p class="comment-jabatan">Front-End Engineer</p>
                         </div>
                     </div>
-                    <p class="comment-desc">Saya ingin memberikan apresiasi besar kepada penyelenggara kursus online ini. Materi-materi yang diajarkan sangat praktis dan relevan dengan industri saat ini. Instruktur memiliki pengetahuan yang mendalam dan selalu responsif terhadap pertanyaan peserta.</p>
+                    <p class="comment-desc">Saya ingin memberikan apresiasi besar kepada penyelenggara kursus online ini. Materi-materi yang diajarkan sangat praktis dan relevan dengan industri saat ini. Instruktur memiliki pengetahuan yang mendalam dan selalu responsif terhadap
+                        pertanyaan peserta.</p>
                 </div>
                 <div class="comment-container">
                     <div class="commentid">
-                    <img src="image/Ellipse 5.png" alt="">
+                        <img src="image/Ellipse 5.png" alt="">
                         <div class="comment-name">
-                        <h3>Harley</h3>
-                        <p class="comment-jabatan">Web Developer</p>
+                            <h3>Harley</h3>
+                            <p class="comment-jabatan">Web Developer</p>
                         </div>
                     </div>
-                    <p class="comment-desc">Online course ini adalah pengalaman yang luar biasa. Selain materi yang sangat berguna, platform pembelajarannya intuitif dan mudah digunakan. Saya juga menghargai fleksibilitas waktu belajar, yang memungkinkan saya untuk mengikuti kursus sambil menjalankan pekerjaan penuh waktu. </p>
+                    <p class="comment-desc">Online course ini adalah pengalaman yang luar biasa. Selain materi yang sangat berguna, platform pembelajarannya intuitif dan mudah digunakan. Saya juga menghargai fleksibilitas waktu belajar, yang memungkinkan saya untuk mengikuti
+                        kursus sambil menjalankan pekerjaan penuh waktu. </p>
                 </div>
             </div>
         </div>
@@ -139,15 +171,17 @@
     
     <!-- content 3 end here -->
 
-    
+
+
+
     <!-- footer start here -->
     <div id="footer-container"></div>
     <script>
-        $(function(){
+        $(function() {
             $("#footer-container").load("footer.html");
         });
     </script>
-        <script>
+    <!-- <script>
             const getPopularCourses = async () => {
                 const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
                 const responseData = await response.json();
@@ -177,7 +211,7 @@
     
             getPopularCourses();
     
-        </script>
+        </script> -->
     <!-- footer end here -->
 </body>
 
