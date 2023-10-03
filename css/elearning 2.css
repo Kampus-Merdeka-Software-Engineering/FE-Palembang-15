@@ -230,13 +230,11 @@ h2 {
 
 .coursebox1 {
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     width: auto;
     margin: 50px 0;
-=======
-    flex-wrap: wrap;  
->>>>>>> 6a1d3442c6f5f3b6f3a16f88fc57229c592ef294
 }
 
 .coursebox2 {

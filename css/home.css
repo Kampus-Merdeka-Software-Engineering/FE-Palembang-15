@@ -1,7 +1,3 @@
-/* Mengatur font untuk seluruh teks pada halaman */
-
-@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
 body {
     width: 100%;
     height: auto;
@@ -11,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 /* style untuk content */
 
@@ -73,7 +68,7 @@ h2 {
     padding-top: 10px;
 }
 
-.visimisi-content1>.boxvisimisi {
+.visimisi-content1>.boxvisimisi{
     width: 300px;
     height: 100px;
     display: flex;
@@ -85,7 +80,6 @@ h2 {
     justify-content: center;
     margin: auto;
     padding-top: 50px;
-    margin-bottom: 5%;
     background-color: white;
 }
 
@@ -134,7 +128,6 @@ h2 {
     margin: 20px 0;
 }
 
-
 /* .branding1>button:hover {
     background-color: white;
     color: #4D2C5E;
@@ -148,7 +141,7 @@ h2 {
     background-color: white;
 }
 
-.course-container h2 {
+.course-container h2{
     font-weight: 700;
 }
 
@@ -165,7 +158,6 @@ h2 {
     margin: 15px;
     justify-content: space-between;
 }
-
 
 /* .course-container1 :hover {
     background-color: rgb(240, 238, 238);
@@ -199,7 +191,7 @@ h2 {
 
 .course-content>p {
     font-size: 12px;
-    margin: 5px 18px;
+    margin: 5px 18px ;
     font-weight: 500;
     text-align: justify;
 }
@@ -239,7 +231,7 @@ h2 {
     outline: none;
     background-color: #4D2C5E;
     color: white;
-}
+} 
 
 .main-container2 {
     padding: 20px;
@@ -262,6 +254,7 @@ h2 {
     padding: 10px 0;
     margin: 50px 0;
 }
+
 
 .comment-container {
     background-color: white;
@@ -297,7 +290,6 @@ h2 {
     font-size: 25px;
 }
 
-
 /* .svg {
     display: flex;
     justify-content: center;
@@ -313,7 +305,6 @@ h2 {
 } */
 
 
-<<<<<<< HEAD
 /* CSS untuk perangkat tablet */
 @media screen and (max-width: 768px) {
     /* section 1 */
@@ -321,9 +312,11 @@ h2 {
     font-size: 25px;
 }
 .banner1 {
+    margin-top: 50px;
     margin-top: 70px;
     padding: 50px 20px;
 }
+
 
 .visimisi-content1 {
     margin: 0 20px;
@@ -344,145 +337,47 @@ h2 {
     height: 80px;
     padding-top: 50px;
 }
-=======
-/* CSS untuk perangkat mobile */
-
-@media screen and (max-width: 768px) {
-    /* section 1 */
-    h2 {
-        font-size: 25px;
-    }
-    .banner1 {
-        margin-top: 50px;
-        padding: 50px 20px;
-    }
-    .visimisi-content1 {
-        margin: 0 20px;
-        padding: 0 20px;
-        flex-direction: column;
-        text-align: center;
-        height: 530px;
-        width: auto;
-        align-items: center;
-    }
-    .visimisi-content1>.boxvisimisi {
-        height: 170px;
-    }
-    .boxvisimisi>img {
-        width: 80px;
-        height: 80px;
-        padding-top: 50px;
-    }
->>>>>>> 6a1d3442c6f5f3b6f3a16f88fc57229c592ef294
     /* section 1 end here */
+
     /* section 2 */
-    .content-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .banner2 {
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0 30px;
-    }
-    .banner2>img {
-        width: 350px;
-        height: auto;
-    }
-    .branding1 {
-        width: auto;
-        margin-left: 10px;
-        margin-bottom: 50px;
-        padding-top: 0;
-    }
-    .branding1>h2 {
-        text-align: center;
-    }
-    .branding1>p {
-        padding-right: 10px;
-    }
-    .branding1>button {
-        padding: 10px 30px;
-    }
+.content-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner2 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.banner2>img{
+    width: 350px;
+    height: auto;
+}
+
+.branding1 {
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+.branding1>h2 {
+    text-align: center;
+}
+
+.branding1>p {
+    padding-right: 10px;
+}
+
+.branding1>button {
+    padding: 10px 30px;
+}
     /* section 2 end here */
-    .course-container {
-        margin: 0 50px;
-    }
-    .coursebox1 {
-        display: flex;
-        justify-content: start;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 0 30px;
-        align-items: center;
-    }
-    .coursebox2 {
-        width: 250px;
-        height: auto;
-        margin: 10px 0;
-        justify-content: center;
-    }
-    .course-content {
-        border: 2px solid rgba(145, 158, 171, 0.24);
-        border-radius: 10px;
-        padding: 10px;
-    }
-    .course-content>.img>img {
-        width: 100%;
-    }
-    .course-content>.namecourse {
-        font-size: 18px;
-        margin: 8px 0;
-    }
-    .course-content>p {
-        font-size: 14px;
-        margin: 5px 0;
-    }
-    .companyimg>img {
-        height: 16px;
-    }
-    .course-content>.upskill {
-        font-size: 10px;
-    }
-    .morecourse {
-        margin: 25px 0;
-    }
-    .morecourse>button {
-        padding: 10px 20px;
-    }
-    .main-container2 {
-        padding: 10px;
-        margin: 5px;
-    }
-    .introduction-course {
-        display: flex;
-        justify-content: start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 10px;
-        height: auto;
-    }
-    .testimoni {
-        margin: 20px 0;
-    }
-    .comment-container {
-        padding: 10px;
-        width: 100%;
-        height: auto;
-    }
-    .commentid>img {
-        width: 60px;
-        height: 60px;
-        padding: 20px;
-    }
-    .comment-desc {
-        padding: 5px 10px;
-    }
-    .comment-container h3 {
-        font-size: 20px;
-    }
+.course-container {
+    margin: 0 50px;
 }
 
 .coursebox1 {
@@ -498,7 +393,7 @@ h2 {
 .coursebox1>.coursebox2 {
     width: 250px;
     height: auto;
-    margin: 15px 0;
+    margin: 15px 0; 
     justify-content: center;
 }
 
@@ -533,7 +428,6 @@ h2 {
 .morecourse {
     margin: 25px 0;
 }
-
 .morecourse>button {
     padding: 10px 20px;
 }
@@ -574,9 +468,10 @@ h2 {
 
 .comment-container h3 {
     font-size: 20px;
+}   
 }
 
-
 /* CSS untuk perangkat mobile */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {}
+}
