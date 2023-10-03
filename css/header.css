@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .navbar-container {
     position: fixed;
     top: 0;
@@ -13,7 +16,7 @@
 
 /* Mengatur gaya logo */
 .logo {
-    width: 150px;
+    width: 170px;
     height: auto;
 }
 
@@ -51,7 +54,7 @@ ul li a {
     width: 40px;
     height: 28px;
     right: 11px;
-    top: 30px;
+    top: 34px;
     opacity: 0;
     cursor: pointer;
 
@@ -83,6 +86,7 @@ ul li a {
 }
 
 .menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
     transform: scale(0)
 }
 
@@ -97,29 +101,39 @@ ul li a {
 
 /* responsive untuk mobile */
 @media screen and (max-width: 576px) {
+.menu-toggle {
+    display: flex;
+}
+
+
+.navbar-container ul li a {
+    color: white;
+}
+
+.navbar-container {
+    background-color: #FDF8EE;
+}
+
 .navbar-container ul{
+    display: flex;
     position: absolute;
-    right: 0;
     top: 0;
-    width: 60%;
+    right: 0;
     height: 100vh;
+    width: 70%;
+    align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
-    background-color: #4D2C5E;
-    z-index: -1;
+    background-color: #311c6b;
+    margin-top: 20%;
     transform: translateX(100%);
-    transition: all 1s;
+    transition: all 0.5s;
     opacity: 0;
- }
-
+}
+ 
  .navbar-container ul.slide {
     opacity: 1;
     transform: translateX(0);
  }
-
-.menu-toggle {
-    display: flex;
-}
 
 }

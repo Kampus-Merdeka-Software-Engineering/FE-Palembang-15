@@ -310,14 +310,14 @@ h2 {
 } */
 
 
-/* CSS untuk perangkat mobile */
+/* CSS untuk perangkat tablet */
 @media screen and (max-width: 768px) {
     /* section 1 */
 h2 {
     font-size: 25px;
 }
 .banner1 {
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 50px 20px;
 }
 

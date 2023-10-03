@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Home</title>
@@ -147,7 +146,7 @@
         </div>
     </div>
     <div class="morecourse">
-        <button>Lihat Kelas Selengkapnya</button>
+        <button id="kelas">Lihat Kelas Selengkapnya</button>
     </div>   
 
     
@@ -205,11 +204,21 @@
 
         </div> -->
     </div>
-    
-    <!-- content 3 end here -->
+    <script>
+        var kelasElement = document.getElementById("kelas");
+        
+        kelasElement.onmouseover = function (){
+            kelasElement.style.background = "white";
+            kelasElement.style.font = "black"
+        }
+        
+        kelasElement.onmouseout = function (){
+            kelasElement.style.background = "#4D2C5E";
+            kelasElement.style.font = "white"
+        }
+    </script>
 
-    
-    <!-- footer start here -->
+    // <!-- footer start here -->
     <div id="footer-container"></div>
     <script>
         $(function(){

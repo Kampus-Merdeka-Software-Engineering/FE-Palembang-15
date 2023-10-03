@@ -25,7 +25,14 @@
                 <span></span>
             </div>
         </nav>
-    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const navbarContainer = document.querySelector('.navbar-container ul');
+
+        menuToggle.addEventListener('click', function () {
+            navbarContainer.classList.toggle('slide');
+        });
+    </script>
     </header>
 </body>
 </html>
