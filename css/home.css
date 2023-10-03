@@ -289,7 +289,7 @@ h2 {
 }
 
 .comment-desc {
-    text-align: center;
+    text-align: justify;
     padding: 10px 20px;
 }
 
@@ -373,14 +373,17 @@ h2 {
         padding: 10px 30px;
     }
     /* section 2 end here */
-    .course-container {
+    .list-container {
+        display: flex;
+    }
+    /* .course-container {
         margin: 0 50px;
     }
     .coursebox1 {
         display: flex;
         justify-content: start;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         overflow-x: auto;
         padding: 0 30px;
         align-items: center;
@@ -390,7 +393,7 @@ h2 {
         height: auto;
         margin: 10px 0;
         justify-content: center;
-    }
+    } */
     .course-content {
         border: 2px solid rgba(145, 158, 171, 0.24);
         border-radius: 10px;
