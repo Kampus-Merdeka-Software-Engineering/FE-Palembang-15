@@ -248,7 +248,7 @@ h2 {
     height: auto;
 }
 
-.introduction-course {
+.comment-box {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -450,6 +450,97 @@ h2 {
     .comment-container h3 {
         font-size: 20px;
     }
+}
+
+.coursebox1 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.coursebox1>.coursebox2 {
+    width: 250px;
+    height: auto;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.course-content {
+    border: 2px solid rgba(145, 158, 171, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.course-content>.img>img {
+    width: 100%;
+}
+
+.course-content>.namecourse {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.course-content>p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.companyimg>img {
+    height: 16px;
+}
+
+.course-content>.upskill {
+    font-size: 10px;
+}
+
+.morecourse {
+    margin: 25px 0;
+}
+
+.morecourse>button {
+    padding: 10px 20px;
+}
+
+.main-container2 {
+    padding: 10px;
+    margin: 5px;
+}
+
+.comment-box {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 30px;
+    height: auto;
+}
+
+.testimoni {
+    margin: 20px 0;
+}
+
+.comment-container {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.commentid>img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+
+.comment-desc {
+    padding: 5px 10px;
+}
+
+.comment-container h3 {
+    font-size: 20px;
 }
 
 
