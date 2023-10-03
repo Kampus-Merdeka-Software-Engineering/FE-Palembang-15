@@ -144,25 +144,34 @@
             const response = await fetch(`https://broad-minute-production.up.railway.app/contents/${courseId}/${episode}`);
 
             const responseData = await response.json();
+            const ContentData = responseData.data;
             console.log("dataaa", responseData)
             const videoUrl = responseData.data[episode - 1].video;
             console.log('Video URL:', videoUrl);
             document.getElementById('courseVideo').src = videoUrl;
 
-            // const responseAll = await fetch(`https://broad-minute-production.up.railway.app/${courseId}`);
-            // const responseAllData = await responseAll.json();
-            // const AllContents = responseAllData.data;
+            const responseAll = await fetch(`https://broad-minute-production.up.railway.app/contents/courses/${courseId}`);
+            const responseAllData = await responseAll.json();
+            const AllContents = responseAllData.data;
 
             const courseList = document.getElementById('courseList');
-            const contentTitle = responseData.data.judulContent;
-            console.log('jjudul:', contentTitle);
+                AllContents.forEach((content, index) => {
+                    const contentItem = document.createElement('div');
+                    contentItem.classList.add("course-item");
 
-            const courseItem = document.createElement('div');
-            courseItem.innerHTML = `<h2>${episode}</h2>
-                                       <div class="course-details">
-                                           <p class="course-title">${contentTitle}</p>
-                                       </div>`;
-            courseList.appendChild(courseItem);
+                    contentItem.innerHTML = `
+                            <h2>0${index + 1}</h2>
+                            <div class="course-details">
+                                <p class="course-title">${content.judulContent}</p>
+                            </div>`;
+                    courseList.appendChild(contentItem);
+
+                    if (index < AllContents.length - 1) {
+                        const hrElement = document.createElement('hr');
+                        hrElement.classList.add("course-divider");
+                        courseList.appendChild(hrElement);
+                     }
+                });
         };
 
         loadCourseContent(courseId, episode);
