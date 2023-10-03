@@ -73,75 +73,6 @@
             <div style="opacity: 1; transform: none;">
                 <h2 class="h2course" style="font-family: Roboto, sans-serif;">Pilih Kelas Terpopuler yang Paling dibutuhkan Perusahaan Besar!</h2>
                     <div class="coursebox1">
-                            <div class="coursebox2">
-                                <div class="course-content">
-                                    <div class="img">
-                                        <img src="image/excel.png" alt="">
-                                    </div>
-                                    <h4 class="namecourse">Microsoft Excel</h4>
-                                    <!-- <p>Standar materi berdasarkan perusahaan :</p>
-                                        <div class="companyimg">
-                                            <img src="image/Astra Logo 1.png" alt="">
-                                            <img src="image/Bank_Central_Asia 1.png" alt="">
-                                            <img src="image/download 1.png" alt="">
-                                        </div> -->
-                                    <p class="upskill">Skill yang diperoleh : Membuat formula unik, Membuat data validation, Mengetahui tabel pivot,...</p>
-                                    <p>4,9 ⭐ (50,6k ulasan) <br>
-                                        Beginner, Professional Certificate</p>
-                                    </div>
-                                </div>
-                            <div class="coursebox2">
-                                <div class="course-content">
-                                    <div class="img">
-                                        <img src="image/digmar.png" alt="">
-                                    </div>
-                                    <h4 class="namecourse">Digital marketing</h4>
-                                    <!-- <p>Standar materi berdasarkan perusahaan :</p>
-                                    <div class="companyimg">
-                                        <img src="image/emtek.png">
-                                        <img src="image/lazada.png">
-                                        <img src="image/kompas.png">
-                                    </div> -->
-                                    <p class="upskill">Skill yang diperoleh : SEO, SEM, PPC, content marketing, social media marketing, email marketing, Meta Ads,...</p>
-                                    <p>4,9 ⭐ (46,5k ulasan) <br>
-                                    Beginner to Advance, Professional Certificate</p>
-                                </div>
-                            </div>
-                            <div class="coursebox2">
-                                <div class="course-content">
-                                    <div class="img">
-                                        <img src="image/uiux.png" alt="">
-                                    </div>
-                                    <h4 class="namecourse">UI/UX Design</h4>
-                                    <!-- <p>Standar materi berdasarkan perusahaan :</p>
-                                    <div class="companyimg">
-                                        <img src="image/telkom.png">
-                                        <img src="image/Shopee 1.png">
-                                        <img src="image/goto.png">
-                                    </div> -->
-                                    <p class="upskill">Skill yang diperoleh : Prototyping, Desain Interaktif, Desain Visual dan Estetika, Psikologi Desain,...</p>
-                                    <p>4,8 ⭐ (40,3k ulasan) <br>
-                                            Beginner to Advance, Professional Certificate</p>
-                                </div>
-                            </div>
-
-                            <div class="coursebox2">
-                                <div class="course-content">
-                                    <div class="img">
-                                        <img src="image/dataanalis.png" alt="">
-                                    </div>
-                                    <h4 class="namecourse">Data Analytics</h4>
-                                    <!-- <p>Standar materi berdasarkan perusahaan :</p>
-                                    <div class="companyimg">
-                                        <img src="image/unilever.png">
-                                        <img src="image/pertamina.png">
-                                        <img src="image/Nestle 1.png">
-                                    </div> -->
-                                    <p class="upskill">Skill yang diperoleh : SQL, Python, Data Visualization,membuat script, mengambil data, dan memproses data,....</p>
-                                    <p>4,8 ⭐ (50,6k ulasan) <br>
-                                        Beginner, Professional Certificate</p>
-                                </div>
-                            </div>
                     </div>
             </div>
         </div>
@@ -216,7 +147,35 @@
             $("#footer-container").load("footer.html");
         });
     </script>
+        <script>
+            const getPopularCourses = async () => {
+                const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
+                const responseData = await response.json();
+                const popularCourses = responseData.data;
+                const coursebox1 = document.querySelector(".coursebox1");
     
+                popularCourses.forEach((course) => {
+                    const courseDiv = document.createElement("div");
+                    courseDiv.classList.add("coursebox2");
+    
+                    courseDiv.innerHTML = `
+                        <div class="course-content">
+                            <div class="img">
+                                <img src="${course.thumbnail}" alt="" referrerpolicy="no-referrer">
+                            </div>
+                            <h4 class="namecourse">${course.judulCourse}</h4>
+                            <p class="upskill">Skill yang diperoleh: ${course.skillDiperoleh}</p>
+                            <p>${course.rating} ⭐ (${course.ulasan}) <br>
+                                ${course.tingkat} Professional Certificate</p>
+                        </div>`;
+    
+                    coursebox1.appendChild(courseDiv);
+                });
+            };
+    
+            getPopularCourses();
+    
+        </script>
     <!-- footer end here -->
 </body>
 
