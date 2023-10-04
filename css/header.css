@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
 }
+
 .navbar-container {
     position: fixed;
     top: 0;
@@ -39,6 +40,10 @@ ul li a {
 /* Mengubah warna teks menu ketika digerakkan */
  ul li a:hover {
     color: rgb(162, 96, 194);
+}
+
+ul li i {
+    display: none;
 }
 
 /* hamburger menu */
@@ -136,4 +141,8 @@ ul li a {
     transform: translateX(0);
  }
 
+ ul li i {
+    display: flex;
+    justify-content: center;
+ }
 }

@@ -80,7 +80,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding-top: 50px;
+    padding: 50px 0;
     background-color: white;
 }
 
@@ -241,6 +241,7 @@ h2 {
     margin: 10px;
     width: auto;
     height: auto;
+    overflow-x: hidden;
 }
 
 .comment-box {
@@ -249,13 +250,16 @@ h2 {
     gap: 15px;
     height: 300px;
     width: auto;
+    flex-wrap: wrap;
 }
 
 .testimoni {
-    width: autos;
+    width: auto;
+    height: auto;
     background-color: #FDF8EE;
     padding: 40px 0;
     margin: 50px 0;
+
 }
 
 .comment-container {
@@ -263,8 +267,8 @@ h2 {
     border: 2px solid #D2D2D2;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 450px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     font-size: 15px;
     padding: 20px;
 }
