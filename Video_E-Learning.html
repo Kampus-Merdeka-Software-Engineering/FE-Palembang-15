@@ -94,6 +94,7 @@
         const episode = parseInt(urlParams.get('episode')) || 1;
         console.log('courseId:', courseId);
         console.log('episode:', episode);
+        let contentId;
 
         const loadCourseContent = async (courseId, episode) => {
             const response = await fetch(`https://broad-minute-production.up.railway.app/contents/${courseId}/${episode}`);
@@ -113,7 +114,7 @@
             const deskripsiContent = ContentData.deskripsi;
             document.getElementById('deskripsi').innerHTML = deskripsiContent;
 
-            const contentId = ContentData.id;
+            contentId = ContentData.id;
             console.log("liat data contentid", contentId);
 
             //ini untuk munculin detail sesuai contentnya
@@ -165,32 +166,32 @@
                 commentsRow.appendChild(komentarDiv);
             });
 
-            const handleSubmitForm = (event) => {
-                event.preventDefault();
-
-                fetch("https://broad-minute-production.up.railway.app/comments", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        nama: document.getElementById("nama").value,
-                        email: document.getElementById("email").value,
-                        jabatan: document.getElementById("jabatan").value,
-                        komentar: document.getElementById("komentar").value,
-                        ContentId: contentId,
-                    }),
-                })
-                .then(() => {
-                    window.location.reload();
-                })
-            };
-
-            document.getElementById("commentForm").onsubmit = handleSubmitForm;
-
         };
 
         loadCourseContent(courseId, episode);
+
+        const handleSubmitForm = (event) => {
+            event.preventDefault();
+            console.log("lihat contentid", contentId);
+            fetch("https://broad-minute-production.up.railway.app/comments", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    nama: document.getElementById("nama").value,
+                    email: document.getElementById("email").value,
+                    jabatan: document.getElementById("jabatan").value,
+                    komentar: document.getElementById("komentar").value,
+                    ContentId: contentId,
+                }),
+            })
+            .then(() => {
+                window.location.reload();
+            })
+        };
+
+        document.getElementById("commentForm").onsubmit = handleSubmitForm;
 
     </script>
 </body>
