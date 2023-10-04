@@ -94,7 +94,7 @@
         <div class="form-container">
             <h3>Bagaimana pengalaman mengikuti EduCareerskill? <br> berbagi bersama kami!</h3>
             <p>isilah formulir dibawah ini berdasakan pengalaman para pengguna setelah mengikuti berbagai program yang diberikan oleh EduCareerSkill.</p>
-            <form method="POST" enctype="multipart/form-data" action="">
+            <form id="commentForm" method="POST" enctype="multipart/form-data" action="">
                 <div class="form-group">
                     <label class="form-label" for="nama">Nama</label>
                     <input class="form-input" type="text" id="nama" name="nama" required>
@@ -146,17 +146,20 @@
             const responseData = await response.json();
             console.log('Response Data:', responseData);
 
-            const ContentData = responseData.data;
+            const ContentData = responseData.data[0];
             console.log("dataaa", responseData)
-            const videoUrl = responseData.data[0].video;
+            const videoUrl = ContentData.video;
             console.log('Video URL:', videoUrl);
             document.getElementById('courseVideo').src = videoUrl;
 
-            const judulContent = responseData.data[0].judulContent;
+            const judulContent = ContentData.judulContent;
             document.getElementById('judul-content').innerHTML = judulContent;
 
-            const deskripsiContent = responseData.data[0].deskripsi;
+            const deskripsiContent = ContentData.deskripsi;
             document.getElementById('deskripsi').innerHTML = deskripsiContent;
+
+            const contentId = ContentData.id;
+            console.log("liat data contentid", contentId);
 
             const responseAll = await fetch(`https://broad-minute-production.up.railway.app/contents/courses/${courseId}`);
             const responseAllData = await responseAll.json();
@@ -184,9 +187,30 @@
                      }
             });
 
+            const handleSubmitForm = (event) => {
+                event.preventDefault();
+
+                fetch("https://broad-minute-production.up.railway.app/comments", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        nama: document.getElementById("nama").value,
+                        email: document.getElementById("email").value,
+                        jabatan: document.getElementById("jabatan").value,
+                        komentar: document.getElementById("komentar").value,
+                        ContentId: contentId,
+                    }),
+                });
+            };
+
+            document.getElementById("commentForm").onsubmit = handleSubmitForm;
+
         };
 
         loadCourseContent(courseId, episode);
+
     </script>
 </body>
 
