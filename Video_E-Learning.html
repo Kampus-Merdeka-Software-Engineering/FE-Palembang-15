@@ -67,8 +67,8 @@
         </div>
         <hr class="course-divider">
         <h2 class="title-comment">Komentar Mengenai E-Learning</h2>
-        <div class="comments-row">
-            <div class="comment-container">
+        <div class="comments-row" id="comments-row">
+            <!-- <div class="comment-container">
                 <h3>John</h3>
                 <p class="comment-jabatan">UI/UX Designer</p>
                 <p class="comment-desc">Saya sangat senang mengikuti kursus online ini. Materi yang diajarkan sangat relevan dengan pekerjaan saya, dan instrukturnya sangat berpengetahuan. Saya telah memperoleh banyak keterampilan baru dan telah menerapkannya dalam pekerjaan
@@ -85,7 +85,7 @@
                 <p class="comment-jabatan">Web Developer</p>
                 <p class="comment-desc">Online course ini adalah pengalaman yang luar biasa. Selain materi yang sangat berguna, platform pembelajarannya intuitif dan mudah digunakan. Saya juga menghargai fleksibilitas waktu belajar, yang memungkinkan saya untuk mengikuti kursus
                     sambil menjalankan pekerjaan penuh waktu. </p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -161,30 +161,53 @@
             const contentId = ContentData.id;
             console.log("liat data contentid", contentId);
 
+            //ini untuk munculin detail sesuai contentnya
             const responseAll = await fetch(`https://broad-minute-production.up.railway.app/contents/courses/${courseId}`);
             const responseAllData = await responseAll.json();
             const AllContents = responseAllData.data;
 
             const courseList = document.getElementById('courseList');
 
+            //show content
             AllContents.forEach((content, index) => {
-                    const contentItem = document.createElement('div');
-                    contentItem.classList.add("course-item");
+                const contentItem = document.createElement('div');
+                contentItem.classList.add("course-item");
 
-                    contentItem.innerHTML = `
-                            <div class="list-content2" onclick="tampilinVideo(${content.CourseId}, ${content.episode})">
-                                <h2>0${index + 1}</h2>
-                                <div class="course-details">
-                                    <p class="course-title">${content.judulContent}</p>
-                                </div>
-                            </div>`;
-                    courseList.appendChild(contentItem);
+                contentItem.innerHTML = `
+                    <div class="list-content2" onclick="tampilinVideo(${content.CourseId}, ${content.episode})">
+                        <h2>0${index + 1}</h2>
+                        <div class="course-details">
+                            <p class="course-title">${content.judulContent}</p>
+                        </div>
+                    </div>`;
+                courseList.appendChild(contentItem);
 
-                    if (index < AllContents.length - 1) {
-                        const hrElement = document.createElement('hr');
-                        hrElement.classList.add("course-divider");
-                        courseList.appendChild(hrElement);
-                     }
+                if (index < AllContents.length - 1) {
+                    const hrElement = document.createElement('hr');
+                    hrElement.classList.add("course-divider");
+                    courseList.appendChild(hrElement);
+                }
+            });
+
+            //ini untuk komentarnya
+            const responseKomentar = await fetch(`https://broad-minute-production.up.railway.app/comments/contents/${contentId}`)
+            // console.log ("test", contentId)
+            const responseAllKomentar = await responseKomentar.json();
+            const AllKomentar = responseAllKomentar.data;
+            
+            const commentsRow = document.getElementById("comments-row");
+
+            //show komentar sesuai yang dipili
+            AllKomentar.forEach((komentar) => {
+                const komentarDiv = document.createElement("div");
+                komentarDiv.classList.add("comment-container");
+
+                komentarDiv.innerHTML = `
+                    <h3>${komentar.nama}</h3>
+                    <p class="comment-jabatan">${komentar.jabatan}</p>
+                    <p class="comment-desc">${komentar.komentar}</p>
+                `;
+                commentsRow.appendChild(komentarDiv);
             });
 
             const handleSubmitForm = (event) => {
@@ -202,7 +225,10 @@
                         komentar: document.getElementById("komentar").value,
                         ContentId: contentId,
                     }),
-                });
+                })
+                .then(() => {
+                    window.location.reload();
+                })
             };
 
             document.getElementById("commentForm").onsubmit = handleSubmitForm;
