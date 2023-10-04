@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/elearning 2.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <title>E - Learning</title>
 </head>
 
@@ -83,6 +84,10 @@
             courses.forEach((course) => {
                 const courseDiv = document.createElement("div");
                 courseDiv.classList.add("coursebox2");
+
+                courseDiv.addEventListener('click', () => {
+                    redirectToVideo(course.id);
+                });
 
                 courseDiv.innerHTML = `
                     <div class="course-content">

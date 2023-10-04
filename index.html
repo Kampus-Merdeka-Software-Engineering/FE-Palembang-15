@@ -161,13 +161,16 @@
                 const popularCourses = responseData.data;
                 const coursebox1 = document.querySelector(".coursebox1");
     
-                popularCourses.forEach((course, index) => {
+                popularCourses.forEach((course) => {
                     const courseDiv = document.createElement("div");
                     courseDiv.classList.add("coursebox2");
-                    courseDiv.id = `${course.id}`;
+
+                    courseDiv.addEventListener('click', () => {
+                        redirectToVideo(course.id);
+                    });
     
                     courseDiv.innerHTML = `
-                        <div class="course-content" onclick="redirectToVideo(${course.id})">
+                        <div class="course-content">
                             <div class="img">
                                 <img src="${course.thumbnail}" alt="" referrerpolicy="no-referrer">
                             </div>
