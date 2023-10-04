@@ -254,7 +254,7 @@ h2 {
 .testimoni {
     width: autos;
     background-color: #FDF8EE;
-    padding: 10px 0;
+    padding: 40px 0;
     margin: 50px 0;
 }
 
@@ -266,11 +266,13 @@ h2 {
     width: 450px;
     height: 300px;
     font-size: 15px;
+    padding: 20px;
 }
 
 .commentid {
     display: flex;
     align-items: center;
+    padding-left: 18px;
 }
 
 .commentid>img {

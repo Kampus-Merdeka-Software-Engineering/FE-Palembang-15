@@ -188,7 +188,8 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 50px 10%;
+    padding: 50px 10%;
+    background-color: #FDF8EE;
 }
 
 .member-card>article {
