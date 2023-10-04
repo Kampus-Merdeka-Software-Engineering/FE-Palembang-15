@@ -120,7 +120,7 @@ body {
 
 .comments-row {
     display: flex;
-    flex-wrap: wrap; /* Memungkinkan pembungkusan ke baris baru */
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
