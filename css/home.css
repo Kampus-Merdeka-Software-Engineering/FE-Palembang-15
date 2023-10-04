@@ -115,7 +115,7 @@ h2 {
     line-height: 1.5;
 }
 
-.branding1>button {
+.branding1 a button {
     padding: 20px 100px;
     font-weight: 500;
     line-height: 1;
@@ -226,7 +226,7 @@ h2 {
     font-size: 15px;
 }
 
-.morecourse>button {
+.morecourse a button {
     padding: 15px 70px;
     line-height: 2;
     border-radius: 50px;
@@ -268,9 +268,12 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 250px;
+    height: auto;
     font-size: 15px;
+    margin: 10px;
     padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .commentid {
@@ -290,8 +293,11 @@ h2 {
 }
 
 .comment-desc {
+    width: auto;
+    height: auto;
     text-align: justify;
-    padding: 10px 20px;
+    padding: 0 20px 15px 20px;
+    margin: 0;
 }
 
 .comment-container h3 {

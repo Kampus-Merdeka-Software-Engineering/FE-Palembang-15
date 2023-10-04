@@ -46,6 +46,18 @@ ul li i {
     display: none;
 }
 
+ul li a .logo {
+    display: none;
+}
+
+ul li svg {
+    display: none;
+}
+
+ul li .logo-mobile {
+    display: none;
+}
+
 /* hamburger menu */
 .menu-toggle {
     display: none;
@@ -142,15 +154,26 @@ ul li i {
     opacity: 1;
     transform: translateX(0);
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 0;
  }
 
  ul li i {
-    display: flex;
+    display: ;
  }
 
  ul li {
     width: 80%;
     height: 50px;
+    display: flex;
  }
+
+ ul li a .logo {
+    display: block;
+ }
+
+ ul li svg {
+    display: block;
+ }
+
+
 }

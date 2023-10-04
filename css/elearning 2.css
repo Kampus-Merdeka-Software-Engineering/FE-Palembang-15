@@ -220,8 +220,10 @@ h2 {
 }
 
 .list-container {
+    display: flex;
+    justify-content: start;
     width: 80%;
-    margin: 0 auto;
+    margin: 0  auto;
 }
 
 .course-container {
