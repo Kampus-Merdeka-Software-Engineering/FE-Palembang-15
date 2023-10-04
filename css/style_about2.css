@@ -1,8 +1,8 @@
 /* Mengatur font untuk seluruh teks pada halaman */
-
 @import url(<link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">);
-body {
+
+ body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     margin: 0;
@@ -279,19 +279,35 @@ article>img {
 } */
 
 
-/* ----------Section 3------------- */
-
 
 /* Mengatur gaya form testimoni */
 
 .Section-2 .comment-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .comment-container .comment-card {
+    max-width: 400px;
+    margin: 2% 3% 0 3%;
+    background-color: #FDF8EE;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ----------Section 3------------- */
+
+.Section-3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.comment-card {
     max-width: 400px;
     margin: 2% 3% 0 3%;
     background-color: #FDF8EE;
@@ -394,5 +410,10 @@ article>img {
     .image-container img {
         max-width: 100%;
         height: auto;
+    }
+
+    .Section-2 .comment-container {
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -311,145 +311,128 @@ h2 {
 /* CSS untuk perangkat tablet */
 
 @media screen and (max-width: 768px) {
-    /* section 1 */
-    h2 {
-        font-size: 25px;
-    }
-    .banner1 {
-        margin-top: 50px;
-        margin-top: 70px;
-        padding: 50px 20px;
-    }
-    .visimisi-content1 {
-        margin: 0 20px;
-        padding: 0 20px;
-        flex-direction: column;
-        text-align: center;
-        height: 530px;
-        width: auto;
-        align-items: center;
-    }
-    .visimisi-content1>.boxvisimisi {
-        height: 170px;
-    }
-    .boxvisimisi>img {
-        width: 80px;
-        height: 80px;
-        padding-top: 50px;
-    }
-    /* section 1 end here */
-    /* section 2 */
-    .content-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .banner2 {
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0 30px;
-    }
-    .banner2>img {
-        width: 350px;
-        height: auto;
-    }
-    .branding1 {
-        width: auto;
-        margin-left: 10px;
-        margin-bottom: 50px;
-        padding-top: 0;
-    }
-    .branding1>h2 {
-        text-align: center;
-    }
-    .branding1>p {
-        padding-right: 10px;
-    }
-    .branding1>button {
-        padding: 10px 30px;
-    }
-    /* section 2 end here */
-    .list-container {
-        display: flex;
-    }
-    /* .course-container {
-        margin: 0 50px;
-    }
-    .coursebox1 {
-        display: flex;
-        justify-content: start;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow-x: auto;
-        padding: 0 30px;
-        align-items: center;
-    }
-    .coursebox2 {
-        width: 250px;
-        height: auto;
-        margin: 10px 0;
-        justify-content: center;
-    } */
-    .course-content {
-        border: 2px solid rgba(145, 158, 171, 0.24);
-        border-radius: 10px;
-        padding: 10px;
-    }
-    .course-content>.img>img {
-        width: 100%;
-    }
-    .course-content>.namecourse {
-        font-size: 18px;
-        margin: 8px 0;
-    }
-    .course-content>p {
-        font-size: 14px;
-        margin: 5px 0;
-    }
-    .companyimg>img {
-        height: 16px;
-    }
-    .course-content>.upskill {
-        font-size: 10px;
-    }
-    .morecourse {
-        margin: 25px 0;
-    }
-    .morecourse>button {
-        padding: 10px 20px;
-    }
-    .main-container2 {
-        padding: 10px;
-        margin: 5px;
-    }
-    .introduction-course {
-        display: flex;
-        justify-content: start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 10px;
-        height: auto;
-    }
-    .testimoni {
-        margin: 20px 0;
-    }
-    .comment-container {
-        padding: 10px;
-        width: 100%;
-        height: auto;
-    }
-    .commentid>img {
-        width: 60px;
-        height: 60px;
-        padding: 20px;
-    }
-    .comment-desc {
-        padding: 5px 10px;
-    }
-    .comment-container h3 {
-        font-size: 20px;
-    }
+/* section 1 */
+h2 {
+    font-size: 25px;
 }
+.banner1 {
+    margin-top: 50px;
+    margin-top: 70px;
+    padding: 50px 20px;
+}
+.visimisi-content1 {
+    margin: 0 20px;
+    padding: 0 20px;
+    flex-direction: column;
+    text-align: center;
+    height: 530px;
+    width: auto;
+    align-items: center;
+}
+.visimisi-content1>.boxvisimisi {
+    height: 170px;
+}
+.boxvisimisi>img {
+    width: 80px;
+    height: 80px;
+    padding-top: 50px;
+}
+/* section 1 end here */
+/* section 2 */
+.content-container {
+    flex-direction: column;
+    text-align: center;
+}
+.banner2 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 30px;
+}
+.banner2>img {
+    width: 350px;
+    height: auto;
+}
+.branding1 {
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+.branding1>h2 {
+    text-align: center;
+}
+.branding1>p {
+    padding-right: 10px;
+}
+.branding1>button {
+    padding: 10px 30px;
+}
+/* section 2 end here */
+.list-container {
+    display: flex;
+}
+
+.course-content {
+    border: 2px solid rgba(145, 158, 171, 0.24);
+    border-radius: 10px;
+    padding: 10px;
+}
+.course-content>.img>img {
+    width: 100%;
+}
+.course-content>.namecourse {
+    font-size: 18px;
+    margin: 8px 0;
+}
+.course-content>p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.companyimg>img {
+    height: 16px;
+}
+.course-content>.upskill {
+    font-size: 10px;
+}
+.morecourse {
+    margin: 25px 0;
+}
+.morecourse>button {
+    padding: 10px 20px;
+}
+.main-container2 {
+    padding: 10px;
+    margin: 5px;
+}
+.introduction-course {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    height: auto;
+}
+.testimoni {
+    margin: 20px 0;
+}
+.comment-container {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+.commentid>img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+.comment-desc {
+    padding: 5px 10px;
+}
+.comment-container h3 {
+    font-size: 20px;
+}
+
 
 .coursebox1 {
     display: flex;
@@ -542,6 +525,7 @@ h2 {
     font-size: 20px;
 }
 
+}
 
 /* CSS untuk perangkat mobile */
 
