@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_about2.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style_about2.css">
+    <link rel="stylesheet" href="style_about2.css"> 
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>About</title>
 </head>
@@ -196,27 +197,6 @@
 
                     // Add an event listener to the button to listen for clicks
                     button.addEventListener("click", buttonClick);
-
-                    const handleSubmitForm = (event) => {
-                        event.preventDefault();
-
-                        fetch("https://broad-minute-production.up.railway.app/testimonials", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify({
-                                nama: document.getElementById("nama").value,
-                                jabatan: document.getElementById("jabatan").value,
-                                perusahaan: document.getElementById("perusahaan").value,
-                                email: document.getElementById("email").value,
-                                layanan: document.getElementById("layanan").value,
-                                testimoni: document.getElementById("testimoni").value,
-                            }),
-                        });
-                    };
-
-                    document.getElementById("testimoniForm").onsubmit = handleSubmitForm;
                 </script>
             </form>
         </div>
@@ -228,6 +208,8 @@
         $(function() {
             $("#footer-container").load("footer.html");
         });
+
+        document.getElementById("testimoniForm").onsubmit = handleSubmitForm;
     </script>
 </body>
 

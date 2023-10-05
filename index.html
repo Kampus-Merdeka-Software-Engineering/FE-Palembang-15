@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Home</title>
@@ -106,68 +106,10 @@
         $(function() {
             $("#footer-container").load("footer.html");
         });
-    </script>
-    <script>
-            const getPopularCourses = async () => {
-                const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
-                const responseData = await response.json();
-                console.log("dataaa", responseData);
-                const popularCourses = responseData.data;
-                const coursebox1 = document.querySelector(".coursebox1");
-    
-                popularCourses.forEach((course) => {
-                    const courseDiv = document.createElement("div");
-                    courseDiv.classList.add("coursebox2");
 
-                    courseDiv.addEventListener('click', () => {
-                        redirectToVideo(course.id);
-                    });
-    
-                    courseDiv.innerHTML = `
-                        <div class="course-content">
-                            <div class="img">
-                                <img src="${course.thumbnail}" alt="" referrerpolicy="no-referrer">
-                            </div>
-                            <h4 class="namecourse">${course.judulCourse}</h4>
-                            <p class="upskill">Skill yang diperoleh: ${course.skillDiperoleh}</p>
-                            <p>${course.rating} ⭐ (${course.ulasan}) <br>
-                                ${course.tingkat} Professional Certificate</p>
-                        </div>`;
-    
-                    coursebox1.appendChild(courseDiv);
-                });
-            };
-    
-            getPopularCourses();
-    
-
-            const showTestimonials = async () => {
-                const response = await fetch('https://broad-minute-production.up.railway.app/testimonials');
-                const responseData = await response.json();
-                const testimonialsData = responseData.data;
-                const testimonialContainer = document.getElementById('comment-box');
-
-                testimonialsData.forEach((testimonial) => {
-                    const testimonialDiv = document.createElement('div');
-                    testimonialDiv.classList.add("comment-container");
-
-                    testimonialDiv.innerHTML = `
-                        <div class="commentid">
-                            <div class="comment-name">
-                                <h3>${testimonial.nama}</h3>
-                                <p class="comment-jabatan">${testimonial.jabatan}</p>
-                            </div>
-                        </div>
-                        <p class="comment-desc">${testimonial.testimoni}</p>
-                    `;
-                    console.log("tes liat", testimonial.nama);
-
-                    testimonialContainer.appendChild(testimonialDiv);
-                })
-            }
-            showTestimonials()
-        </script>
- 
+        getPopularCourses();
+        showTestimonials();
+    </script> 
     <!-- footer end here -->
 </body>
 
