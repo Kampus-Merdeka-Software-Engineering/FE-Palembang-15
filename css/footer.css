@@ -87,7 +87,8 @@
 .footer p {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
+    font-style: oblique;
 }
 
 @media (max-width: 768px) {
