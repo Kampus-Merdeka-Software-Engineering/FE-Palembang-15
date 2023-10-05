@@ -51,10 +51,9 @@ h2 {
     padding: 0;
     box-sizing: border-box;
     color: #4D2C5E;
-    font-family: Roboto;
     font-size: 30px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 135%;
     text-align: center;
 }
