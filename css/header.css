@@ -127,6 +127,7 @@ ul li .logo-mobile {
 
 .navbar-container ul li a {
     color: white;
+    width: 80%;
 }
 
 .navbar-container {
@@ -138,8 +139,8 @@ ul li .logo-mobile {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 85%;
+    height: 80vh;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;

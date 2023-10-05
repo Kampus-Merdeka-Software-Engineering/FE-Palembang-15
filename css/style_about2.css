@@ -203,9 +203,18 @@
     cursor: pointer;
 }
 
+
 article>img {
     max-width: 65%;
-    margin: 20px;
+    margin-top: 15px;
+}
+
+.dekripsi-member h2 {
+    margin: 0;
+}
+
+.dekripsi-member a button :hover {
+    background-color: #4D2C5E;
 }
 
 .contact-member {
@@ -220,6 +229,7 @@ article>img {
     cursor: pointer;
     width: 80%;
 }
+
 
 
 /* .Section-2 {

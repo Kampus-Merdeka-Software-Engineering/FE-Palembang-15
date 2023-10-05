@@ -35,26 +35,28 @@
     </div>
     <div class="branding2">
         <div class="resume-content">
-            <div class="box">
+            <div class="box" onclick="changeImage()">
                 <h3>Materi Terstruktur dan Lengkap</h3>
                 <p>Disusun oleh para experts dari top companies dan sesuai kebutuhan industri. Diajarkan secara bertahap dari level dasar hingga lanjut.</p>
             </div>
-            <div class="box">
+            <div class="box" onclick="changeImage2()">
                 <h3>Tidak Hanya Menonton Rekaman</h3>
                 <p>Selain menyimak video materi, dapatkan bahan modul untuk praktek, serta ikuti Webinar series bulanan bersama experts.</p>
             </div>
-            <div class="box">
+            <div class="box" onclick="changeImage3()">
                 <h3>Banyak Pilihan Untuk Upgrade Skillmu</h3>
                 <p>Perkembangan dan kemajuan teknologi saat ini semakin cepat, disini kamu bisa mengembangkan skill dan meraih sukses.</p>
             </div>
-            <div class="box">
+            <div class="box" onclick="changeImage4()">
                 <h3>Gabung Komunitas Pengembangan Skill dan Karir</h3>
                 <p>Belajar bareng, berbagi pengalaman dan membangun jaringan bersama ribuan pengguna EduCareerSkill.</p>
             </div>
         </div>
         <div class="banner3">
-            <img src="./image/bisnisman.png">
-
+            <img id="myimage" src="image/materikhap.png">
+            <img id="myimage" src="image/tidakaja.png">
+            <img id="myimage" src="image/banyak skill.png">
+            <img id="myimage" src="image/bisnisman.png">
         </div>
     </div>
 
@@ -68,7 +70,6 @@
         </div>
     </div>
 
-    
     <!-- footer start here -->
     <div id="footer-container"></div>
     <script>
@@ -79,6 +80,32 @@
         getCourses();
     </script>
     <!-- footer end here -->
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myimage');
+            image.classList.add('slidein');
+            img.src = "materikhap.png";
+        }
+
+        function changeImage2() {
+            var image = document.getElementById('myimage');
+            image.classList.add('slide');
+            img.src = "tidakaja.png";
+        }
+
+        function changeImage3() {
+            var image = document.getElementById('myimage');
+            image.classList.add('slide');
+            img.src = "banyak skill.png";
+        }
+
+        function changeImage4() {
+            var image = document.getElementById('myimage');
+            image.classList.add('slide');
+            img.src = "bisnisman.png";
+        }
+    </script>
 </body>
 
 </html>
