@@ -59,6 +59,7 @@ h2 {
     text-align: center;
 }
 
+
 /* ISI KONTEN */
 
 .branding2 {
@@ -111,8 +112,8 @@ h2 {
     padding-left: 30px;
     font-size: 24px;
     text-align: left;
-    font-weight: 700; */
-    margin: 20px;
+    font-weight: 700;
+    */ margin: 20px;
     margin: 15px 0 10px 0;
 }
 
@@ -131,6 +132,7 @@ h2 {
 
 
 /* LIST COURSE */
+
 
 /* 
 .course-container {
@@ -158,6 +160,7 @@ h2 {
     cursor: pointer;
     border-radius: 16px;
 } */
+
 
 /* .list-container {
     width: 100%;
@@ -223,7 +226,7 @@ h2 {
     display: flex;
     justify-content: start;
     width: 80%;
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
 .course-container {
@@ -245,6 +248,7 @@ h2 {
     margin: 15px;
     justify-content: space-between;
 }
+
 
 /* .course-container1 :hover {
     background-color: rgb(240, 238, 238);
@@ -279,7 +283,7 @@ h2 {
 
 .course-content>p {
     font-size: 12px;
-    margin: 5px 18px ;
+    margin: 5px 18px;
     font-weight: 500;
     text-align: justify;
 }
@@ -302,89 +306,76 @@ h2 {
     font-weight: 400;
 }
 
+
 /* CSS untuk perangkat tablet*/
+
 @media screen and (max-width: 768px) {
-.content-container {
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
+    .content-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .branding1 {
+        margin: 0 2%;
+        padding: 0;
+    }
+    .banner2>img {
+        margin-top: 100px;
+        max-width: 100%;
+        height: auto;
+    }
+    .branding1>button {
+        padding: 15px 70px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .branding2 {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px 15px;
+    }
+    .branding2 .resume-content .box {
+        width: auto;
+        height: auto;
+        padding: 15px;
+    }
+    .branding2 .resume-content .box h3 {
+        font-size: 25px;
+    }
+    .box>p {
+        font-size: 20px;
+    }
+    .branding2 .banner3 img {
+        width: 290px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .coursebox1 {
+        justify-content: center;
+        text-align: center;
+        padding: 0 2%;
+    }
 }
 
-.branding1 {
-    margin: 0 2%;
-    padding: 0;
-}
-
-.banner2>img {
-    margin-top: 100px;
-    max-width: 100%;
-    height: auto;
-}
-
-.branding1>button {
-    padding: 15px 70px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-.branding2 {
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: 20px 15px;
-}
-
-.branding2 .resume-content .box {
-    width: auto;
-    height: auto;
-    padding: 15px;
-}
-
-.branding2 .resume-content .box h3 {
-    font-size: 25px;
-}
-
-.box>p {
-    font-size: 20px;
-}
-
-.branding2 .banner3 img {
-    width: 290px;
-    height: auto;
-    margin-bottom: 50px;
-}
-
-.coursebox1 {
-    flex-direction: column;
-    text-align: center;
-    padding: 0 15%;
-}
-
-}
 
 /* CSS untuk perangkat tablet */
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-.content-container {
-    padding: 5% 2%;
+    .content-container {
+        padding: 5% 2%;
+    }
+    .branding1 {
+        margin: 0 2%;
+    }
+    .branding1>button {
+        padding: 10px 20px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .branding2 .resume-content .box h3 {
+        font-size: 36px;
+    }
 }
-
-.branding1 {
-    margin: 0 2%;
-}
-
-.branding1>button {
-    padding: 10px 20px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-.branding2 .resume-content .box h3 {
-    font-size: 36px;
-}
-
-}
-
