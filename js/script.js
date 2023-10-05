@@ -115,6 +115,9 @@ const handleSubmitForm = (event) => {
             layanan: document.getElementById("layanan").value,
             testimoni: document.getElementById("testimoni").value,
         }),
+    })
+    .then(() => {
+        window.location.reload();
     });
 };
 

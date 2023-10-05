@@ -249,6 +249,11 @@ h2 {
     justify-content: space-between;
 }
 
+.coursebox2:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(243, 142, 18, 0.3);
+    cursor: pointer;
+}
 
 /* .course-container1 :hover {
     background-color: rgb(240, 238, 238);
@@ -256,7 +261,7 @@ h2 {
 } */
 
 .course-content {
-    border: 4px solid rgba(145, 158, 171, 0.24);
+    border: 4px solid rgba(145, 158, 171, 0.123);
     border-radius: 16px;
     padding: 15px 5px;
     background-color: #FDF8EE;
