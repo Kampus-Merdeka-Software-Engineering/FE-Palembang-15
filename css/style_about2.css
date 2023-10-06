@@ -409,6 +409,12 @@ article>img {
     transition: background-color 0.3s ease;
 }
 
+.contact-member:hover {
+    background-color: #35b31c;
+
+}
+
+
 .comment-card button:hover {
     background-color: #4D2C5E;
 }
@@ -450,4 +456,25 @@ article>img {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Media query untuk mode tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .navbar-container {
+        padding: 10px 20px; /* Sesuaikan dengan tampilan desktop */
+    }
+
+    .text-container {
+        text-align: left; /* Sesuaikan dengan tampilan desktop */
+    }
+
+    .image-container {
+        text-align: right; /* Sesuaikan dengan tampilan desktop */
+    }
+
+    .image-container img {
+        max-width: 70%; /* Sesuaikan dengan tampilan desktop */
+    }
+    
 }
