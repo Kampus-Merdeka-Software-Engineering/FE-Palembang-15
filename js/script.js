@@ -24,7 +24,7 @@ function handleHover(memberCard) {
 
     memberCard.addEventListener('mouseout', function() {
         memberCard.style.color = '';
-        memberCard.style.transform = 'translateY(0)';
+        memberCard.style.transform = '';
     });
 }
 
