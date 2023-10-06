@@ -196,29 +196,6 @@ body {
 
 /* responsive untuk hapee */
 @media (max-width: 768px) {
-    /* responsive untuk navbar */
-    /* .navbar-content {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    .navbar-content {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navbar-content .button-sign1,
-    .navbar-content .button-sign2 {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .logo {
-        max-width: 100px;
-        height: auto;
-    } */
-    /* end navbar */
 
     .video-learning {
         display: flex;
@@ -228,6 +205,11 @@ body {
 
     .video-container {
         width: 100%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 35vh;
     }
 
     .course-content-container {
@@ -281,54 +263,11 @@ body {
     .form-container{
         width: 70%;
     }
-
-    /* responsive untuk footernya */
-    
-    /* .footer-container {
-        background-color: #4D2C5E;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-content {
-        width: 100%; 
-        display: block;
-    }
-
-    .footer-social-icons ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer p{
-        font-size: 12px;
-        width: 100%;
-        display: block;
-    }    
-    
-    .footer-links {
-        display: block;
-        justify-content: space-between;
-        width: 50%;
-        margin-top: 20px;
-    } */
-    /* end footer */
 }
 
 
 /* responsive untuk tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
-    
-    /* .logo {
-        max-width: 150px;
-        height: auto;
-    } */
     .video-learning {
         display: flex;
         flex-direction: column;
@@ -337,6 +276,11 @@ body {
 
     .video-container {
         width: 100%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 60vh;
     }
 
     .course-content-container {

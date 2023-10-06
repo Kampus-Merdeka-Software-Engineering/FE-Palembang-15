@@ -15,6 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function handleHover(memberCard) {
+    memberCard.addEventListener('mouseover', function() {
+        memberCard.style.transition = 'color 0.5s, transform 0.3s';
+        memberCard.style.color = 'white';
+        memberCard.style.transform = 'scale(1.07)';
+    });
+
+    memberCard.addEventListener('mouseout', function() {
+        memberCard.style.color = '';
+        memberCard.style.transform = 'translateY(0)';
+    });
+}
+
 
 // untuk pass nilai url dari click courses di index atao elearning
 function redirectToVideo(courseId) {
@@ -31,7 +44,6 @@ function tampilinVideo(courseId, episode) {
 const getPopularCourses = async () => {
     const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
     const responseData = await response.json();
-    console.log("dataaa", responseData);
     const popularCourses = responseData.data;
     const coursebox1 = document.querySelector(".coursebox1");
 
@@ -78,7 +90,6 @@ const showTestimonials = async () => {
             </div>
             <p class="comment-desc">${testimonial.testimoni}</p>
         `;
-        console.log("tes liat", testimonial.nama);
 
         testimonialContainer.appendChild(testimonialDiv);
     })
@@ -211,7 +222,6 @@ const loadCourseContent = async (courseId, episode) => {
 //untuk submit komentar
 const handleSubmitFormKomentar = (event) => {
     event.preventDefault();
-    console.log("lihat contentid", contentId);
     fetch("https://broad-minute-production.up.railway.app/comments", {
         method: "POST",
         headers: {

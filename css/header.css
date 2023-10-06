@@ -110,13 +110,12 @@ ul li .logo-mobile {
 }
 
 /* responsive untuk tablet */
-@media sceen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 .navbar-container ul {
-    width: 50%;
+    width: 54%;
 }
 
 }   
-
 
 /* responsive untuk mobile */
 @media screen and (max-width: 576px) {
