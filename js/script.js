@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.getElementsByClassName('tombol');
+        for (const button of buttons) {
+        button.addEventListener('mouseover', function() {
+            button.style.transition = 'background-color 0.3s, color 0.3s';
+            button.style.backgroundColor = '#8E4898';
+            button.style.boxShadow = '0 0 20px rgba(207, 96, 220, 0.4)';
+            button.style.color = 'white';
+        });
+        button.addEventListener('mouseout', function() {
+            button.style.backgroundColor = '';
+            button.style.color = '';
+            button.style.boxShadow = '';
+        });
+    }
+});
+
+
 // untuk pass nilai url dari click courses di index atao elearning
 function redirectToVideo(courseId) {
     window.location.href = `Video_E-Learning.html?courseId=${courseId}&episode=1`;
