@@ -159,7 +159,7 @@ h2 {
     justify-content: center;
 }
 
-.listbox1 {
+/*.listbox1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -330,7 +330,7 @@ h2 {
 }
 
 
-/* CSS untuk perangkat tablet*/
+/* CSS untuk perangkat Mobile*/
 
 @media screen and (max-width: 768px) {
     .content-container {
@@ -385,20 +385,40 @@ h2 {
 
 /* CSS untuk perangkat tablet */
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .content-container {
-        padding: 5% 2%;
-    }
-    .branding1 {
-        margin: 0 2%;
-    }
-    .branding1>button {
-        padding: 10px 20px;
-    }
-    h2 {
-        font-size: 36px;
-    }
-    .branding2 .resume-content .box h3 {
-        font-size: 36px;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.branding1 {
+    padding-top: 50px;
+}
+.branding1 p {
+    padding: 0;
+}
+
+.banner2 img {
+    width: 550px;
+    height: auto;
+    margin-top:  50px;
+    margin-bottom: 80px;
+}
+
+.branding2 {
+    margin: 50px 20px ;
+}
+.branding2 .resume-content .box {
+    width: auto;
+    height: auto;
+}
+
+.branding2 .resume-content .box h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.branding2 .resume-content .box p {
+    font-size: 15px;
+}
+
+.banner3 img {
+    width: auto;
+    height: auto;
+}
 }

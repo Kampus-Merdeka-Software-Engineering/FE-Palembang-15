@@ -164,6 +164,7 @@ h2 {
     background-color: #f0f0f0;
     box-shadow: 0 0 20px rgba(243, 142, 18, 0.3);
     cursor: pointer;
+    border-radius: 15px;
 }
 
 /* .course-container1 :hover {
@@ -309,22 +310,7 @@ h2 {
 }
 
 
-/* .svg {
-    display: flex;
-    justify-content: center;
-}
-
-.svg>.svg1 {
-    margin: 0 30px;
-}
-
-.svg>.svg2 {
-    width: 15x;
-    height: auto;
-} */
-
-
-/* CSS untuk perangkat tablet */
+/* CSS untuk perangkat mobile */
 
 @media screen and (max-width: 768px) {
 /* section 1 */
@@ -543,6 +529,37 @@ h2 {
 
 }
 
-/* CSS untuk perangkat mobile */
+/* CSS untuk perangkat tablet */
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.banner1 {
+    padding: 120px 30px;
+}
+
+.visimisi-content1 {
+    margin: 0 40px;
+    padding: 15px 30px;
+}
+
+.visimisi-content1 .boxvisimisi {
+    height: 200px;
+}
+
+.boxvisimisi h4 p {
+    font-size: 15px;
+}
+
+.boxvisimisi img {
+    width: 100px;
+    height: 80px;
+}
+
+.banner2 img {
+    width: 400px;
+}
+
+.coursebox1 {
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+}
