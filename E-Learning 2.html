@@ -35,31 +35,32 @@
     </div>
     <div class="branding2">
         <div class="resume-content">
-            <div class="box" onclick="changeImage()">
+            <div class="box" id="button" onclick="slideImage(1)">
                 <h3>Materi Terstruktur dan Lengkap</h3>
                 <p>Disusun oleh para experts dari top companies dan sesuai kebutuhan industri. Diajarkan secara bertahap dari level dasar hingga lanjut.</p>
             </div>
-            <div class="box" onclick="changeImage2()">
+            <div class="box" id="button" onclick="slideImage(2)">
                 <h3>Tidak Hanya Menonton Rekaman</h3>
                 <p>Selain menyimak video materi, dapatkan bahan modul untuk praktek, serta ikuti Webinar series bulanan bersama experts.</p>
             </div>
-            <div class="box" onclick="changeImage3()">
+            <div class="box" id="button" onclick="slideImage(3)">
                 <h3>Banyak Pilihan Untuk Upgrade Skillmu</h3>
                 <p>Perkembangan dan kemajuan teknologi saat ini semakin cepat, disini kamu bisa mengembangkan skill dan meraih sukses.</p>
             </div>
-            <div class="box" onclick="changeImage4()">
+            <div class="box" id="button" onclick="slideImage(4)">
                 <h3>Gabung Komunitas Pengembangan Skill dan Karir</h3>
                 <p>Belajar bareng, berbagi pengalaman dan membangun jaringan bersama ribuan pengguna EduCareerSkill.</p>
             </div>
         </div>
-        <div class="banner3">
-            <img id="myimage" src="image/materikhap.png">
-            <img id="myimage" src="image/tidakaja.png">
-            <img id="myimage" src="image/banyak skill.png">
-            <img id="myimage" src="image/bisnisman.png">
+        <div id="bannerImage" class="banner3">
+            <img id="myimage1" class="slide-image slide-in" src="image/materikhap.png">
+            <img id="myimage2" class="slide-image" src="image/tidakaja.png">
+            <img id="myimage3" class="slide-image" src="image/banyak skill.png">
+            <img id="myimage4" class="slide-image" src="image/bisnisman.png">
         </div>
     </div>
-
+    
+    
     <div class="list-container" id="kelas-populer">
         <div class="course-container">
             <div style="opacity: 1; transform: none;">
@@ -79,33 +80,20 @@
 
         getCourses();
     </script>
-    <!-- footer end here -->
 
     <script>
-        function changeImage() {
-            var image = document.getElementById('myimage');
-            image.classList.add('slidein');
-            img.src = "materikhap.png";
+            // Ini sebaiknya ditempatkan di dalam blok <script> yang dijalankan setelah elemen gambar dimuat
+    document.addEventListener("DOMContentLoaded", function() {
+        var myImage1 = document.getElementById("myimage1");
+        if (myImage1) {
+            myImage1.classList.remove("slide-out");
         }
+    });
 
-        function changeImage2() {
-            var image = document.getElementById('myimage');
-            image.classList.add('slide');
-            img.src = "tidakaja.png";
-        }
-
-        function changeImage3() {
-            var image = document.getElementById('myimage');
-            image.classList.add('slide');
-            img.src = "banyak skill.png";
-        }
-
-        function changeImage4() {
-            var image = document.getElementById('myimage');
-            image.classList.add('slide');
-            img.src = "bisnisman.png";
-        }
     </script>
+    <!-- footer end here -->
+
+    <script src="script.js"></script>
 </body>
 
 </html>

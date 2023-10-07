@@ -14,13 +14,13 @@ body {
 .banner1 {
     display: flex;
     align-items: center;
-    padding: 150px 100px;
+    padding: 120px 100px;
     margin-bottom: 10px;
     background-color: #FDF8EE;
 }
 
 .banner1>img {
-    width: 100%;
+    width: 90%;
     border-radius: 20px;
     height: auto;
     margin: 0 auto;
@@ -314,252 +314,266 @@ h2 {
 
 @media screen and (max-width: 768px) {
 /* section 1 */
-h2 {
-    font-size: 25px;
-}
-.banner1 {
-    margin-top: 50px;
-    margin-top: 70px;
-    padding: 50px 20px;
-}
-.visimisi-content1 {
-    margin: 0 20px;
-    padding: 0 20px;
-    flex-direction: column;
-    text-align: center;
-    height: 530px;
-    width: auto;
-    align-items: center;
-}
-.visimisi-content1>.boxvisimisi {
-    height: 170px;
-}
-.boxvisimisi>img {
-    width: 80px;
-    height: 80px;
-    padding-top: 50px;
-}
-/* section 1 end here */
-/* section 2 */
-.content-container {
-    flex-direction: column;
-    text-align: center;
-}
-.banner2 {
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0 30px;
-}
-.banner2>img {
-    width: 350px;
-    height: auto;
-}
-.branding1 {
-    width: auto;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    padding-top: 0;
-}
-.branding1>h2 {
-    text-align: center;
-}
-.branding1>p {
-    padding-right: 10px;
-}
-.branding1>button {
-    padding: 10px 30px;
-}
-/* section 2 end here */
-.list-container {
-    display: flex;
-}
+    h2 {
+        font-size: 25px;
+    }
+    .banner1 {
+        margin-top: 50px;
+        margin-top: 70px;
+        padding: 50px 20px;
+    }
+    .visimisi-content1 {
+        margin: 0 20px;
+        padding: 0 20px;
+        flex-direction: column;
+        text-align: center;
+        height: 530px;
+        width: auto;
+        align-items: center;
+    }
+    .visimisi-content1>.boxvisimisi {
+        height: 170px;
+    }
+    .boxvisimisi>img {
+        width: 80px;
+        height: 80px;
+        padding-top: 50px;
+    }
+    /* section 1 end here */
+    /* section 2 */
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner2 {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0 30px;
+    }
+    .banner2>img {
+        width: 350px;
+        height: auto;
+    }
+    .branding1 {
+        width: auto;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        padding-top: 0;
+    }
+    .branding1>h2 {
+        text-align: center;
+    }
+    .branding1>p {
+        padding-right: 10px;
+    }
+    .branding1>button {
+        padding: 10px 30px;
+    }
+    /* section 2 end here */
+    .list-container {
+        display: flex;
+    }
 
-.course-content {
-    border: 2px solid rgba(145, 158, 171, 0.24);
-    border-radius: 10px;
-    padding: 10px;
-}
-.course-content>.img>img {
-    width: 100%;
-}
-.course-content>.namecourse {
-    font-size: 18px;
-    margin: 8px 0;
-}
-.course-content>p {
-    font-size: 14px;
-    margin: 5px 0;
-}
-.companyimg>img {
-    height: 16px;
-}
-.course-content>.upskill {
-    font-size: 10px;
-}
-.morecourse {
-    margin: 25px 0;
-}
-.morecourse>button {
-    padding: 10px 20px;
-}
-.main-container2 {
-    padding: 10px;
-    margin: 5px;
-}
-.introduction-course {
-    display: flex;
-    justify-content: start;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 10px;
-    height: auto;
-}
-.testimoni {
-    margin: 20px 0;
-}
-.comment-container {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-}
-.commentid>img {
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-}
-.comment-desc {
-    padding: 5px 10px;
-}
-.comment-container h3 {
-    font-size: 20px;
-}
+    .course-content {
+        border: 2px solid rgba(145, 158, 171, 0.24);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .course-content>.img>img {
+        width: 100%;
+    }
+    .course-content>.namecourse {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    .course-content>p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .companyimg>img {
+        height: 16px;
+    }
+    .course-content>.upskill {
+        font-size: 10px;
+    }
+    .morecourse {
+        margin: 25px 0;
+    }
+    .morecourse>button {
+        padding: 10px 20px;
+    }
+    .main-container2 {
+        padding: 10px;
+        margin: 5px;
+    }
+    .introduction-course {
+        display: flex;
+        justify-content: start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        height: auto;
+    }
+    .testimoni {
+        margin: 20px 0;
+    }
+    .comment-container {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .commentid>img {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+    }
+    .comment-desc {
+        padding: 5px 10px;
+    }
+    .comment-container h3 {
+        font-size: 20px;
+    }
 
+    .coursebox1 {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0 30px;
+        align-items: center;
+    }
 
-.coursebox1 {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 30px;
-    align-items: center;
-}
+    .coursebox1>.coursebox2 {
+        width: 250px;
+        height: auto;
+        margin: 15px 0;
+        justify-content: center;
+    }
 
-.coursebox1>.coursebox2 {
-    width: 250px;
-    height: auto;
-    margin: 15px 0;
-    justify-content: center;
-}
+    .course-content {
+        border: 2px solid rgba(145, 158, 171, 0.24);
+        border-radius: 10px;
+        padding: 10px;
+    }
 
-.course-content {
-    border: 2px solid rgba(145, 158, 171, 0.24);
-    border-radius: 10px;
-    padding: 10px;
-}
+    .course-content>.img>img {
+        width: 100%;
+    }
 
-.course-content>.img>img {
-    width: 100%;
-}
+    .course-content>.namecourse {
+        font-size: 18px;
+        margin: 8px 0;
+    }
 
-.course-content>.namecourse {
-    font-size: 18px;
-    margin: 8px 0;
-}
+    .course-content>p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
 
-.course-content>p {
-    font-size: 14px;
-    margin: 5px 0;
-}
+    .companyimg>img {
+        height: 16px;
+    }
 
-.companyimg>img {
-    height: 16px;
-}
+    .course-content>.upskill {
+        font-size: 10px;
+    }
 
-.course-content>.upskill {
-    font-size: 10px;
-}
+    .morecourse {
+        margin: 25px 0;
+    }
 
-.morecourse {
-    margin: 25px 0;
-}
+    .morecourse>button {
+        padding: 10px 20px;
+    }
 
-.morecourse>button {
-    padding: 10px 20px;
-}
+    .main-container2 {
+        padding: 10px;
+        margin: 5px;
+    }
 
-.main-container2 {
-    padding: 10px;
-    margin: 5px;
-}
+    .comment-box {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        gap: 30px;
+        height: auto;
+    }
 
-.comment-box {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    gap: 30px;
-    height: auto;
-}
+    .testimoni {
+        margin: 20px 0;
+    }
 
-.testimoni {
-    margin: 20px 0;
-}
+    .comment-container {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
 
-.comment-container {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-}
+    .commentid>img {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+    }
 
-.commentid>img {
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-}
+    .comment-desc {
+        padding: 5px 10px;
+    }
 
-.comment-desc {
-    padding: 5px 10px;
-}
-
-.comment-container h3 {
-    font-size: 20px;
-}
+    .comment-container h3 {
+        font-size: 20px;
+    }
 
 }
 
 /* CSS untuk perangkat tablet */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-.banner1 {
-    padding: 120px 30px;
-}
+    .banner1 {
+        padding: 120px 30px;
+    }
 
-.visimisi-content1 {
-    margin: 0 40px;
-    padding: 15px 30px;
-}
+    .visimisi-content1 {
+        margin: 0 40px;
+        padding: 15px 30px;
+    }
 
-.visimisi-content1 .boxvisimisi {
-    height: 200px;
-}
+    .branding1 p {
+    padding-right: 15px;
+    }
 
-.boxvisimisi h4 p {
-    font-size: 15px;
-}
+    .visimisi-content1 .boxvisimisi {
+        height: 200px;
+    }
 
-.boxvisimisi img {
-    width: 100px;
-    height: 80px;
-}
+    .boxvisimisi h4 p {
+        font-size: 12px;
+    }
 
-.banner2 img {
-    width: 400px;
-}
+    .boxvisimisi img {
+        width: 100px;
+        height: 80px;
+    }
 
-.coursebox1 {
-    flex-wrap: wrap;
-    margin: 0 100px;
-}
+    .branding1 {
+        margin-right: 20px;
+    }
+    .banner2 {
+        margin-left: 40px;
+    }
+    .banner2 img {
+       width: 400px;
+       margin-top: 50px;
+    }
+    
+    .branding1 a button {
+        padding: 10px 20px;
+    }
+
+    .coursebox1 {
+        flex-wrap: wrap;
+        margin: 0 100px;
+    }
 }

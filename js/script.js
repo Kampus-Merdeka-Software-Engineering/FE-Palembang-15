@@ -247,3 +247,22 @@ const handleSubmitFormKomentar = (event) => {
         window.location.reload();
     })
 };
+
+// untuk branding e-learning
+function slideImage(imageNumber) {
+    // Mendapatkan referensi ke elemen gambar
+    var images = document.querySelectorAll(".slide-image");
+
+    // Menghapus kelas slide-in dari semua gambar
+    images.forEach(function(image) {
+        image.classList.remove("slide-in");
+        image.classList.add("slide-out");
+    });
+
+    // Menghapus kelas slide-out dari gambar yang sesuai dan menambahkan kelas slide-in
+    var selectedImage = document.getElementById("myimage" + imageNumber);
+    if (selectedImage) {
+        selectedImage.classList.remove("slide-out");
+        selectedImage.classList.add("slide-in");
+    }
+}
