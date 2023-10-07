@@ -204,19 +204,27 @@ const loadCourseContent = async (courseId, episode) => {
     
     const commentsRow = document.getElementById("comments-row");
 
-    //show komentar sesuai yang dipili
-    AllKomentar.forEach((komentar) => {
-        const komentarDiv = document.createElement("div");
-        komentarDiv.classList.add("comment-container");
+    if (AllKomentar.length === 0){
+        const noComments = document.getElementById("no-comment-message");
+        noComments.innerHTML = `
+            <img src="image/comment.jpg" alt="Comment Image">
+            <p class="no-comment-p">Belum ada komentar. Jadi yang pertama untuk komentar dalam video content ${judulContent} !</p>
+        `
 
-        komentarDiv.innerHTML = `
-            <h3>${komentar.nama}</h3>
-            <p class="comment-jabatan">${komentar.jabatan}</p>
-            <p class="comment-desc">${komentar.komentar}</p>
-        `;
-        commentsRow.appendChild(komentarDiv);
-    });
+    } else {
+        //show komentar sesuai yang dipili
+        AllKomentar.forEach((komentar) => {
+            const komentarDiv = document.createElement("div");
+            komentarDiv.classList.add("comment-container");
 
+            komentarDiv.innerHTML = `
+                <h3>${komentar.nama}</h3>
+                <p class="comment-jabatan">${komentar.jabatan}</p>
+                <p class="comment-desc">${komentar.komentar}</p>
+            `;
+            commentsRow.appendChild(komentarDiv);
+        });
+    }
 };
 
 //untuk submit komentar

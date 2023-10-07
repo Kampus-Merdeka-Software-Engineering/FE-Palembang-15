@@ -182,6 +182,21 @@
 
 /* --------------.section 2----------------- */
 
+.section-title {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4D2C5E;
+    color: white;
+}
+
+.group-title {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .member-card {
     display: flex;
     flex-wrap: wrap;
