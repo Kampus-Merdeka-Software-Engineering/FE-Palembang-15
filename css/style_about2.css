@@ -476,23 +476,58 @@ article>img {
     }
 }
 
-/* Media query untuk mode tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
 
+@media (max-width: 1024px) {
+    /* Tambahkan perubahan gaya atau tata letak di sini sesuai kebutuhan Anda */
+    
+    /* Contoh: mengubah ukuran font pada mode tablet */
+    body {
+        font-size: 16px;
+    }
+
+    
     .navbar-container {
-        padding: 10px 20px; /* Sesuaikan dengan tampilan desktop */
+        padding: 10px 20px;
     }
 
     .text-container {
-        text-align: left; /* Sesuaikan dengan tampilan desktop */
+        text-align: left;
     }
 
     .image-container {
-        text-align: right; /* Sesuaikan dengan tampilan desktop */
+        text-align: right;
     }
 
     .image-container img {
-        max-width: 70%; /* Sesuaikan dengan tampilan desktop */
+        max-width: 70%;
     }
     
+    
 }
+
+@media (max-width: 360px) {
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .navbar-container {
+        padding: 10px 15px;
+    }
+
+    .text-container {
+        text-align: left;
+    }
+
+    .image-container {
+        text-align: right;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+    
+   
+}
+
