@@ -110,20 +110,8 @@ ul li .logo-mobile {
 }
 
 /* responsive untuk tablet */
-<<<<<<< Updated upstream
-@media screen and (max-width: 769px) {
-.navbar-container ul {
-    width: 56%;
-}
-
-}   
-=======
 /* @media screen and (max-width: 768px) {
-.navbar-container ul {
-    width: 50%;
-} */
- 
->>>>>>> Stashed changes
+}
 
 /* responsive untuk mobile */
 @media screen and (max-width: 768px) {
