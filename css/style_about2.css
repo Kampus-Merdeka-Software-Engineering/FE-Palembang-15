@@ -491,8 +491,8 @@ article>img {
     }
 
     .text-container {
-        max-width: 30%;
         text-align: left;
+        font-size : 22px;
     }
 
     .image-container {
@@ -504,11 +504,11 @@ article>img {
     }
       
     .Section-1 h2 {  
-      font-size: 30px;  
+      font-size: 24px;  
     }   
   
-      .Section-1 p {  
-      font-size: 20px;  
+    .Section-1 p {  
+      font-size: 16px;  
     }   
 }
 
