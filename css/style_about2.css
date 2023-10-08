@@ -493,7 +493,7 @@ article>img {
     .text-container {
         max-width: 50px ;
         text-align: left;
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .image-container {
@@ -509,7 +509,7 @@ article>img {
     }   
   
     .Section-1 p {  
-      font-size: 14px;  
+      font-size: 12px;  
     }   
 }
 
