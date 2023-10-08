@@ -512,7 +512,7 @@ article>img {
   
 }
 
-@media (max-width: 360px) {
+@media (max-width: 900px) {
 
     body {
         font-size: 14px;
@@ -524,6 +524,7 @@ article>img {
     }
 
     .text-container {
+        max-width: 50 %
         text-align: left;
     }
 
