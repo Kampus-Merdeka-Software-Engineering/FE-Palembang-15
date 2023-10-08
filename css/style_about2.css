@@ -508,7 +508,8 @@ article>img {
   
     .Section-1 p {  
       font-size: 12px;  
-    }   
+    } 
+  
 }
 
 @media (max-width: 360px) {
