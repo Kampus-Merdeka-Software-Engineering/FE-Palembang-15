@@ -491,6 +491,7 @@ article>img {
     }
 
     .text-container {
+        width: 30%;
         text-align: left;
     }
 
@@ -501,8 +502,14 @@ article>img {
     .image-container img {
         max-width: 70%;
     }
-    
-    
+      
+    .Section-1 h2 {  
+      font-size: 10px;  
+     }   
+  
+      .Section-1 p {  
+      font-size: 6px;  
+     }   
 }
 
 @media (max-width: 360px) {
@@ -517,7 +524,6 @@ article>img {
     }
 
     .text-container {
-        width : 30 %
         text-align: left;
     }
 
@@ -528,13 +534,5 @@ article>img {
     .image-container img {
         max-width: 100%;
     }
-
-    .Section-1 h2 { 
-     font-size: 10px; 
-    }  
-
-     .Section-1 p { 
-     font-size: 6px; 
-    }   
 }
 
