@@ -70,7 +70,16 @@
                 <button id="submitBtn" class="form-button tombol" type="submit">Submit</button>
                 <script>
                     function buttonClick() {
-                        alert("Terima kasih telah menambahkan Komentar!");
+                        var nama = document.getElementById("nama").value;
+                        var email = document.getElementById("email").value;
+                        var jabatan= document.getElementById("jabatan").value;
+                        var komentar = document.getElementById("komentar").value;
+
+                        if (nama && email && jabatan && komentar) {
+                            alert("Terima kasih telah menambahkan Komentar!");
+                        } else {
+                            alert("Ada data yang belum diisi. Silahkan isi semua kolom form yang ada.");
+                        }
                     }
 
                     // GET button element menggunakan DOM

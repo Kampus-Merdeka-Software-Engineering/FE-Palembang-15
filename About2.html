@@ -193,7 +193,18 @@
                 <script>
                     // Function to perform an action when the button is clicked
                     function buttonClick() {
-                        alert("Terima kasih telah menambahkan Testimoni!");
+                        var nama = document.getElementById("nama").value;
+                        var jabatan = document.getElementById("jabatan").value;
+                        var perusahaan = document.getElementById("perusahaan").value;
+                        var email = document.getElementById("email").value;
+                        var layanan = document.getElementById("layanan").value;
+                        var testimoni = document.getElementById("testimoni").value;
+
+                        if (nama && jabatan && perusahaan && email && layanan && testimoni) {
+                            alert("Terima kasih telah menambahkan Testimoni!");
+                        } else {
+                            alert("Ada data yang belum diisi. Silahkan isi semua kolom form yang ada.");
+                        }
                     }
 
                     // Get a reference to the button element using the DOM
