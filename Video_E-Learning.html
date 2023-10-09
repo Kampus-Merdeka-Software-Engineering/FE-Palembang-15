@@ -104,8 +104,6 @@
         const urlParams = new URLSearchParams(window.location.search);
         const courseId = urlParams.get('courseId');
         const episode = parseInt(urlParams.get('episode')) || 1;
-        console.log('courseId:', courseId);
-        console.log('episode:', episode);
         let contentId;
 
         loadCourseContent(courseId, episode);
