@@ -26,8 +26,8 @@
                 </div>
                 <div class="course-content-container">
                     <h1>Course Content</h2>
-                    <div class="course-list" id="courseList">
-                    </div>
+                        <div class="course-list" id="courseList">
+                        </div>
                 </div>
             </div>
         </div>
@@ -70,7 +70,16 @@
                 <button id="submitBtn" class="form-button tombol" type="submit">Submit</button>
                 <script>
                     function buttonClick() {
-                        alert("Terima kasih telah menambahkan Komentar!");
+                        var nama = document.getElementById("nama").value;
+                        var email = document.getElementById("email").value;
+                        var jabatan= document.getElementById("jabatan").value;
+                        var komentar = document.getElementById("komentar").value;
+
+                        if (nama && email && jabatan && komentar) {
+                            alert("Terima kasih telah menambahkan Komentar!");
+                        } else {
+                            alert("Ada data yang belum diisi. Silahkan isi semua kolom form yang ada.");
+                        }
                     }
 
                     // GET button element menggunakan DOM
@@ -89,6 +98,8 @@
             $("#footer-container").load("footer.html");
         });
     </script>
+
+    <!-- Video e-learning -->
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const courseId = urlParams.get('courseId');
@@ -99,7 +110,6 @@
 
         loadCourseContent(courseId, episode);
         document.getElementById("commentForm").onsubmit = handleSubmitFormKomentar;
-
     </script>
 </body>
 

@@ -1,4 +1,4 @@
-body {
+    body {
     width: 100%;
     height: auto;
     background-color: white;
@@ -81,13 +81,17 @@ h2 {
     align-items: center;
 }
 
+
 /* animation .banner3 */
+
 .banner3 img {
     align-items: center;
     margin-left: 200px;
 }
 
+
 /*animation slide*/
+
 .slide-image {
     position: absolute;
     width: 490px;
@@ -106,7 +110,6 @@ h2 {
     opacity: 0;
     transform: translateX(0);
 }
-
 
 .resume-content {
     display: flex;
@@ -246,6 +249,7 @@ h2 {
     border-radius: 15px;
 }
 
+
 /* .course-container1 :hover {
     background-color: rgb(240, 238, 238);
     cursor: pointer;
@@ -277,11 +281,20 @@ h2 {
     margin: 10px 0;
 }
 
-.course-content>p {
+.course-content .upskill {
     font-size: 12px;
     margin: 5px 18px;
     font-weight: 500;
     text-align: justify;
+}
+
+.course-content p {
+    font-size: 12px;
+    margin: 5px 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: left;
+    display: block;
 }
 
 .course-content>.companyimg {
@@ -313,60 +326,48 @@ h2 {
         align-items: center;
         width: auto;
     }
-
     .branding1 {
         text-align: center;
         margin: 0;
         padding: 0;
     }
-
     .branding1 p {
         padding: 0 5px;
     }
-
     .branding1 h2 {
         text-align: center;
     }
-
     .banner2 img {
         margin-top: 100px;
         max-width: 100%;
         height: auto;
     }
-
     .branding1 button {
         padding: 15px 70px;
     }
-
     h2 {
         font-size: 30px;
     }
-
     .branding2 {
         flex-direction: column;
         width: auto;
         height: auto;
         margin: 20px 15px;
     }
-
     .branding2 .resume-content .box {
         width: auto;
         height: auto;
         padding: 15px;
     }
-
     .branding2 .resume-content .box h3 {
         font-size: 25px;
     }
-
     .box>p {
         font-size: 20px;
     }
-
     .branding2 .banner3 img {
         display: none;
     }
-    
     .coursebox1 {
         justify-content: center;
         text-align: center;
@@ -382,31 +383,19 @@ h2 {
         width: auto;
     }
     .branding1 {
-        padding-top: 100px;
+        padding-top: 50px;
     }
-
-    .branding1 h2 {
-        font-size: 27px;
-    }
-
     .branding1 p {
         padding: 0;
-        font-size: 15px;
     }
-
     .banner2 img {
-        width: 500px;
-        margin-top:  80px;
+        width: 550px;
+        height: auto;
+        margin-top: 50px;
         margin-bottom: 80px;
     }
- 
-    .branding1 a button {
-        padding: 10px 20px;
-    }
-
     .branding2 {
-        margin: 50px 20px ;
-        flex-direction: column;
+        margin: 50px 20px;
     }
 
     .resume-content {
