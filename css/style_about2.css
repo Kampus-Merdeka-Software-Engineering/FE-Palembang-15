@@ -491,6 +491,7 @@ article>img {
     }
 
     .text-container {
+        max-width: 50%
         text-align: left;
         font-size: 14px;
     }
@@ -509,6 +510,7 @@ article>img {
 
     .section-1 h2 {
         font-size: 13px;
+    }
 }
 
 @media (max-width: 900px) {
