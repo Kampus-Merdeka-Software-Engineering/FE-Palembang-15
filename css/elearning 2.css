@@ -81,7 +81,9 @@ h2 {
     align-items: center;
 }
 
+
 /* animation .banner3 */
+
 .banner3 img {
     position: relative;
     position: absolute;
@@ -273,6 +275,7 @@ h2 {
     border-radius: 15px;
 }
 
+
 /* .course-container1 :hover {
     background-color: rgb(240, 238, 238);
     cursor: pointer;
@@ -304,11 +307,20 @@ h2 {
     margin: 10px 0;
 }
 
-.course-content>p {
+.course-content .upskill {
     font-size: 12px;
     margin: 5px 18px;
     font-weight: 500;
     text-align: justify;
+}
+
+.course-content p {
+    font-size: 12px;
+    margin: 5px 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: left;
+    display: block;
 }
 
 .course-content>.companyimg {
@@ -386,39 +398,34 @@ h2 {
 /* CSS untuk perangkat tablet */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-.branding1 {
-    padding-top: 50px;
-}
-.branding1 p {
-    padding: 0;
-}
-
-.banner2 img {
-    width: 550px;
-    height: auto;
-    margin-top:  50px;
-    margin-bottom: 80px;
-}
-
-.branding2 {
-    margin: 50px 20px ;
-}
-.branding2 .resume-content .box {
-    width: auto;
-    height: auto;
-}
-
-.branding2 .resume-content .box h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.branding2 .resume-content .box p {
-    font-size: 15px;
-}
-
-.banner3 img {
-    width: auto;
-    height: auto;
-}
+    .branding1 {
+        padding-top: 50px;
+    }
+    .branding1 p {
+        padding: 0;
+    }
+    .banner2 img {
+        width: 550px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .branding2 {
+        margin: 50px 20px;
+    }
+    .branding2 .resume-content .box {
+        width: auto;
+        height: auto;
+    }
+    .branding2 .resume-content .box h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .branding2 .resume-content .box p {
+        font-size: 15px;
+    }
+    .banner3 img {
+        width: auto;
+        height: auto;
+    }
 }
