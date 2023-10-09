@@ -538,6 +538,7 @@ h2 {
     .visimisi-content1 {
         margin: 0 40px;
         padding: 15px 30px;
+        height: 180px;
     }
 
     .branding1 p {
@@ -560,9 +561,11 @@ h2 {
     .branding1 {
         margin-right: 20px;
     }
+
     .banner2 {
         margin-left: 40px;
     }
+    
     .banner2 img {
        width: 400px;
        margin-top: 50px;
@@ -576,4 +579,21 @@ h2 {
         flex-wrap: wrap;
         margin: 0 100px;
     }
+}
+
+/* CSS untuk perangkat tablet2 */
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+    .visimisi-content1 {
+        margin: 0 100px;
+    }
+
+    .boxvisimisi h4 p {
+        font-size: 13px;
+    }
+
+    .coursebox1 {
+        flex-wrap: wrap;
+    }
+
+
 }

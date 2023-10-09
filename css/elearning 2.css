@@ -378,6 +378,9 @@ h2 {
 /* CSS untuk perangkat tablet */
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content-container {
+        width: auto;
+    }
     .branding1 {
         padding-top: 100px;
     }
@@ -429,7 +432,7 @@ h2 {
     .banner3 img {
         width: 500px;
         height: auto;
-        margin-left: 140px;
+        margin: 0 150px;
     }
 
     /*animation slide*/
@@ -451,4 +454,65 @@ h2 {
         opacity: 0;
         transform: translateX(100%);
     }
+    
+}
+
+
+/* CSS untuk perangkat tablet */
+
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+    .content-container {
+        width: auto;
+    }
+    .branding1 {
+        padding-top: 100px;
+    }
+
+    .branding1 h2 {
+        font-size: 27px;
+    }
+
+    .branding1 p {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .banner2 img {
+        width: 500px;
+        margin-top:  80px;
+        margin-bottom: 80px;
+    }
+    
+    .branding2 {
+        width: auto;
+        justify-content: center;
+    }
+
+    /* .resume-content {
+        margin: 0 30px;
+        padding-top: 530px;
+        
+    } */
+
+    .branding2 .resume-content .box {
+        width: auto;
+        height: auto;
+    }
+
+    .branding2 .resume-content .box h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .branding2 .resume-content .box p {
+        font-size: 15px;
+    }
+
+    .banner3 img {
+        width: 450px;
+        height: auto;
+        align-items: center;
+        margin: 0;
+    }
+
 }
