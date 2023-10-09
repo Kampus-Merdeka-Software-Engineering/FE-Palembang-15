@@ -459,8 +459,9 @@ article > img {
   }
 
   .text-container {
+    width: 50%;
     text-align: left;
-    padding: 20px;
+    font-size: 14;
   }
 
   .image-container {
@@ -472,11 +473,11 @@ article > img {
   }
 
   .section-1 h2 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .section-1 p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .comment-container .comment-card {
