@@ -473,6 +473,14 @@ article > img {
     max-width: 70%;
   }
 
+  .Section-1 h2 {
+    font-size: 20px;
+  }
+
+  .Section-1 p {
+    font-size: 13px;
+  }
+
   .comment-container .comment-card {
     max-width: 200px;
     margin: 2% 0 0 0;
