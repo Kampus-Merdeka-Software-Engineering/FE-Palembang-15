@@ -95,7 +95,6 @@
 .text-container {
     flex: 1;
     text-align: left;
-    font-size: 14px;
     padding: 20px;
     margin-right: 20px;
 }
@@ -148,7 +147,7 @@
 
 .Section-1 h2 {
     color: #333;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -157,7 +156,7 @@
 
 .Section-1 p {
     color: #666;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -493,6 +492,7 @@ article>img {
 
     .text-container {
         text-align: left;
+        font-size: 14px;
     }
 
     .image-container {
@@ -502,6 +502,13 @@ article>img {
     .image-container img {
         max-width: 70%;
     }
+    
+    .section-1 p {
+        font-size: 20px;
+    }
+
+    .section-1 h2 {
+        font-size: 13px;
 }
 
 @media (max-width: 900px) {
