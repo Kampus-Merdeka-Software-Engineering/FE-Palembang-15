@@ -26,8 +26,8 @@
                 </div>
                 <div class="course-content-container">
                     <h1>Course Content</h2>
-                    <div class="course-list" id="courseList">
-                    </div>
+                        <div class="course-list" id="courseList">
+                        </div>
                 </div>
             </div>
         </div>
@@ -89,6 +89,8 @@
             $("#footer-container").load("footer.html");
         });
     </script>
+
+    <!-- Video e-learning -->
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const courseId = urlParams.get('courseId');
@@ -99,7 +101,6 @@
 
         loadCourseContent(courseId, episode);
         document.getElementById("commentForm").onsubmit = handleSubmitFormKomentar;
-
     </script>
 </body>
 
