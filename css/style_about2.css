@@ -95,6 +95,7 @@
 .text-container {
     flex: 1;
     text-align: left;
+    font-size: 14px;
     padding: 20px;
     margin-right: 20px;
 }
@@ -147,7 +148,7 @@
 
 .Section-1 h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -156,7 +157,7 @@
 
 .Section-1 p {
     color: #666;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
@@ -501,15 +502,6 @@ article>img {
     .image-container img {
         max-width: 70%;
     }
-      
-    .Section-1 h2 {  
-      font-size: 18px;  
-    }   
-  
-    .Section-1 p {  
-      font-size: 12px;  
-    } 
-  
 }
 
 @media (max-width: 900px) {
