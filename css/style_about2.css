@@ -188,12 +188,6 @@
     padding: 20px;
     background-color: #4D2C5E;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-}
-
-.section-title:hover {
-    background-color: #420660ad;
 }
 
 .group-title {
@@ -202,7 +196,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
 
 .member-card {
     display: flex;
@@ -409,6 +402,11 @@ article>img {
     transition: background-color 0.3s ease;
 }
 
+.contact-member:hover {
+    background-color: #35b31c;
+}
+
+
 .comment-card button:hover {
     background-color: #4D2C5E;
 }
@@ -441,13 +439,102 @@ article>img {
         text-align: center;
         padding: 20px;
     }
+    
+.Section-1 .image-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        /* margin: 0 10px; */
+    }
+
     .image-container img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 300px;
         height: auto;
     }
 
     .Section-2 .comment-container {
         flex-direction: column;
         align-items: center;
+        padding: 0 20px;
+    }
+
+    .comment-container .comment-card {
+        width: auto;
+        margin: 2% 0 0 0;
+        gap: 20px;
+        background-color: #FDF8EE;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        /* margin-bottom: 30px; */
+    }
+
+    .member-card {
+        margin-top: 30px;
     }
 }
+
+
+@media (max-width: 1024px) {
+    /* Tambahkan perubahan gaya atau tata letak di sini sesuai kebutuhan Anda */
+    
+    /* Contoh: mengubah ukuran font pada mode tablet */
+    body {
+        font-size: 16px;
+    }
+
+    
+    .navbar-container {
+        padding: 10px 20px;
+    }
+
+    .text-container {
+        max-width: 70%
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .image-container {
+        text-align: right;
+    }
+
+    .image-container img {
+        max-width: 70%;
+    }
+    
+    .section-1 p {
+        font-size: 20px;
+    }
+
+    .section-1 h2 {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .navbar-container {
+        padding: 10px 15px;
+    }
+
+    .text-container {
+        max-width: 50 %
+        text-align: left;
+    }
+
+    .image-container {
+        text-align: right;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+

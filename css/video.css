@@ -124,6 +124,19 @@ body {
     margin-top: 20px;
 }
 
+#no-comment-message img {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+.no-comment-p {
+    font-weight: bold; 
+    text-align: center;
+    font-size: 26px;
+    color: #4D2C5E;
+}
+
 .form-judul {
     text-align: center;
     padding-top: 30px;
@@ -196,29 +209,6 @@ body {
 
 /* responsive untuk hapee */
 @media (max-width: 768px) {
-    /* responsive untuk navbar */
-    /* .navbar-content {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    .navbar-content {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navbar-content .button-sign1,
-    .navbar-content .button-sign2 {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .logo {
-        max-width: 100px;
-        height: auto;
-    } */
-    /* end navbar */
 
     .video-learning {
         display: flex;
@@ -228,6 +218,11 @@ body {
 
     .video-container {
         width: 100%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 35vh;
     }
 
     .course-content-container {
@@ -277,58 +272,28 @@ body {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 90%;
     }
+
+    #no-comment-message img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .no-comment-p {
+        font-weight: bold; 
+        text-align: center;
+        font-size: 18px;
+        color: #4D2C5E;
+    }
     
     .form-container{
         width: 70%;
     }
-
-    /* responsive untuk footernya */
-    
-    /* .footer-container {
-        background-color: #4D2C5E;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-content {
-        width: 100%; 
-        display: block;
-    }
-
-    .footer-social-icons ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer p{
-        font-size: 12px;
-        width: 100%;
-        display: block;
-    }    
-    
-    .footer-links {
-        display: block;
-        justify-content: space-between;
-        width: 50%;
-        margin-top: 20px;
-    } */
-    /* end footer */
 }
 
 
 /* responsive untuk tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
-    
-    /* .logo {
-        max-width: 150px;
-        height: auto;
-    } */
     .video-learning {
         display: flex;
         flex-direction: column;
@@ -337,6 +302,11 @@ body {
 
     .video-container {
         width: 100%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 60vh;
     }
 
     .course-content-container {
@@ -360,4 +330,10 @@ body {
         
     }
 
+    .no-comment-p {
+        font-weight: bold; 
+        text-align: center;
+        font-size: 20px;
+        color: #4D2C5E;
+    }
 }

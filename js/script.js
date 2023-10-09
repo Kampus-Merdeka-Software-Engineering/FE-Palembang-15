@@ -15,6 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function handleHover(memberCard) {
+    memberCard.addEventListener('mouseover', function() {
+        memberCard.style.transition = 'color 0.5s, transform 0.3s';
+        memberCard.style.color = 'white';
+        memberCard.style.transform = 'scale(1.07)';
+    });
+
+    memberCard.addEventListener('mouseout', function() {
+        memberCard.style.color = '';
+        memberCard.style.transform = '';
+    });
+}
+
 
 // untuk pass nilai url dari click courses di index atao elearning
 function redirectToVideo(courseId) {
@@ -31,7 +44,6 @@ function tampilinVideo(courseId, episode) {
 const getPopularCourses = async () => {
     const response = await fetch("https://broad-minute-production.up.railway.app/courses/popular");
     const responseData = await response.json();
-    console.log("dataaa", responseData);
     const popularCourses = responseData.data;
     const coursebox1 = document.querySelector(".coursebox1");
 
@@ -78,7 +90,6 @@ const showTestimonials = async () => {
             </div>
             <p class="comment-desc">${testimonial.testimoni}</p>
         `;
-        console.log("tes liat", testimonial.nama);
 
         testimonialContainer.appendChild(testimonialDiv);
     })
@@ -193,25 +204,32 @@ const loadCourseContent = async (courseId, episode) => {
     
     const commentsRow = document.getElementById("comments-row");
 
-    //show komentar sesuai yang dipili
-    AllKomentar.forEach((komentar) => {
-        const komentarDiv = document.createElement("div");
-        komentarDiv.classList.add("comment-container");
+    if (AllKomentar.length === 0){
+        const noComments = document.getElementById("no-comment-message");
+        noComments.innerHTML = `
+            <img src="image/comment.jpg" alt="Comment Image">
+            <p class="no-comment-p">Belum ada komentar. Jadi yang pertama untuk komentar dalam video content ${judulContent} !</p>
+        `
 
-        komentarDiv.innerHTML = `
-            <h3>${komentar.nama}</h3>
-            <p class="comment-jabatan">${komentar.jabatan}</p>
-            <p class="comment-desc">${komentar.komentar}</p>
-        `;
-        commentsRow.appendChild(komentarDiv);
-    });
+    } else {
+        //show komentar sesuai yang dipili
+        AllKomentar.forEach((komentar) => {
+            const komentarDiv = document.createElement("div");
+            komentarDiv.classList.add("comment-container");
 
+            komentarDiv.innerHTML = `
+                <h3>${komentar.nama}</h3>
+                <p class="comment-jabatan">${komentar.jabatan}</p>
+                <p class="comment-desc">${komentar.komentar}</p>
+            `;
+            commentsRow.appendChild(komentarDiv);
+        });
+    }
 };
 
 //untuk submit komentar
 const handleSubmitFormKomentar = (event) => {
     event.preventDefault();
-    console.log("lihat contentid", contentId);
     fetch("https://broad-minute-production.up.railway.app/comments", {
         method: "POST",
         headers: {
@@ -229,3 +247,22 @@ const handleSubmitFormKomentar = (event) => {
         window.location.reload();
     })
 };
+
+// untuk branding e-learning
+function slideImage(imageNumber) {
+    // Mendapatkan referensi ke elemen gambar
+    var images = document.querySelectorAll(".slide-image");
+
+    // Menghapus kelas slide-in dari semua gambar
+    images.forEach(function(image) {
+        image.classList.remove("slide-in");
+        image.classList.add("slide-out");
+    });
+
+    // Menghapus kelas slide-out dari gambar yang sesuai dan menambahkan kelas slide-in
+    var selectedImage = document.getElementById("myimage" + imageNumber);
+    if (selectedImage) {
+        selectedImage.classList.remove("slide-out");
+        selectedImage.classList.add("slide-in");
+    }
+}

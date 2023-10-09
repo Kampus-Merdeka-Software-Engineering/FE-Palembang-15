@@ -1,11 +1,11 @@
-body {
+    body {
     width: 100%;
     height: auto;
     background-color: white;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .content-container {
@@ -85,21 +85,28 @@ h2 {
 /* animation .banner3 */
 
 .banner3 img {
-    position: relative;
-    position: absolute;
     align-items: center;
-    transform: translatex(80%);
-    transition: all 0.5s;
-    opacity: 0;
+    margin-left: 200px;
+}
+
+
+/*animation slide*/
+
+.slide-image {
+    position: absolute;
     width: 490px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.1s, transform 0.5s;
 }
 
-.banner3 img.slidein {
+.slide-in {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 
-.banner3 img.slideout {
+.slide-out {
     opacity: 0;
     transform: translateX(0);
 }
@@ -107,6 +114,7 @@ h2 {
 .resume-content {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .branding2 .resume-content .box {
@@ -125,20 +133,30 @@ h2 {
     cursor: pointer;
 }
 
+.branding2 .resume-content .box:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(243, 142, 18, 0.3);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.branding2 .resume-content .box:active {
+    opacity: 0.7;
+}
+
 .branding2 .resume-content .box h3 {
     color: #4D2C5E;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     padding-left: 30px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     font-weight: 700;
-    */ margin: 20px;
     margin: 15px 0 10px 0;
 }
 
 .box>p {
     color: #8A8A8A;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -147,57 +165,13 @@ h2 {
     margin: 0;
     text-align: justify;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 
 /* LIST COURSE */
 
-
-/* 
-.course-container {
-    display: flex;
-    margin: 0 30px;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-/*.listbox1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 40px;
-}
-
-.listbox2 {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* .listbox2 :hover {
-    background-color: rgb(240, 238, 238);
-    cursor: pointer;
-    border-radius: 16px;
-} */
-
-
-/* .list-container {
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    grid-auto-rows: (100px, auto);
-    padding: 10px;
-    margin-top: auto;
-}
-
-.list-container::nth-child(4n) {
-    clear: both;
-} */
-
 .box-list {
-    /* background-color: #FDF8EE; */
     padding-left: 2%;
 }
 
@@ -346,20 +320,29 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .content-container {
+        display: flex;
         padding: 20px;
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
     .branding1 {
-        margin: 0 2%;
+        text-align: center;
+        margin: 0;
         padding: 0;
     }
-    .banner2>img {
+    .branding1 p {
+        padding: 0 5px;
+    }
+    .branding1 h2 {
+        text-align: center;
+    }
+    .banner2 img {
         margin-top: 100px;
         max-width: 100%;
         height: auto;
     }
-    .branding1>button {
+    .branding1 button {
         padding: 15px 70px;
     }
     h2 {
@@ -383,9 +366,7 @@ h2 {
         font-size: 20px;
     }
     .branding2 .banner3 img {
-        width: 290px;
-        height: auto;
-        margin-bottom: 50px;
+        display: none;
     }
     .coursebox1 {
         justify-content: center;
@@ -413,19 +394,46 @@ h2 {
     .branding2 {
         margin: 50px 20px;
     }
-    .branding2 .resume-content .box {
-        width: auto;
-        height: auto;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .branding1 {
+            padding-top: 100px;
+        }
+        .branding1 h2 {
+            font-size: 27px;
+        }
+        .branding1 p {
+            padding: 0;
+            font-size: 15px;
+        }
+        .banner2 img {
+            width: 500px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .branding1 a button {
+            padding: 10px 20px;
+        }
+        .branding2 {
+            margin: 50px 20px;
+            flex-direction: column;
+        }
+        .resume-content {
+            margin: 0 30px;
+            margin-top: 530px;
+        }
+        .branding2 .resume-content .box {
+            width: auto;
+            height: auto;
+        }
+        .branding2 .resume-content .box h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .branding2 .resume-content .box p {
+            font-size: 15px;
+        }
+        .banner3 img {
+            width: auto;
+            height: auto;
+        }
     }
-    .branding2 .resume-content .box h3 {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
-    .branding2 .resume-content .box p {
-        font-size: 15px;
-    }
-    .banner3 img {
-        width: auto;
-        height: auto;
-    }
-}

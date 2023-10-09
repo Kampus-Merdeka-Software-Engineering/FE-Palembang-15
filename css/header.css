@@ -24,7 +24,7 @@ body {
 .navbar-container ul{
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 42%;
     justify-content: space-around;
 }
 
@@ -110,16 +110,11 @@ ul li .logo-mobile {
 }
 
 /* responsive untuk tablet */
-@media sceen and (max-width: 768px) {
-.navbar-container ul {
-    width: 50%;
+/* @media screen and (max-width: 768px) {
 }
 
-}   
-
-
 /* responsive untuk mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 .menu-toggle {
     display: flex;
 }
