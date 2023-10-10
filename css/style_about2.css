@@ -482,7 +482,7 @@ article > img {
   }
 
   .comment-container .comment-card {
-    max-width: 200px;
+    max-width: 300px;
     margin: 2% 3% 0 0;
     background-color: #fdf8ee;
     border-radius: 5px;
